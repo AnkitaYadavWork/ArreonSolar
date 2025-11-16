@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="60" viewBox="0 0 180 60" role="img" aria-label="Mahadev Infra">
+  <defs>
+    <linearGradient id="mah" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e53e3e"/>
+      <stop offset="100%" stop-color="#fb7185"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <path d="M14 44 L22 28 L30 44 Z" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+    <text x="46" y="40" font-family="Segoe UI, Roboto, sans-serif" font-weight="800" font-size="20" fill="url(#mah)">Mahadev Infra</text>
+  </g>
+</svg>

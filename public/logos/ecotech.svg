@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="60" viewBox="0 0 180 60" role="img" aria-label="EcoTech">
+  <defs>
+    <linearGradient id="eco" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0a6b3e"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <path d="M18 38c0-10 8-18 18-18-2 10-8 18-18 18Z" fill="#c6f6d5"/>
+    <path d="M18 38c8-2 14-8 18-18" stroke="#16a34a" stroke-width="3" fill="none"/>
+    <text x="50" y="40" font-family="Segoe UI, Roboto, sans-serif" font-weight="800" font-size="20" fill="url(#eco)">EcoTech</text>
+  </g>
+</svg>

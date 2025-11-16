@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="60" viewBox="0 0 180 60" role="img" aria-label="Power Grid">
+  <defs>
+    <linearGradient id="pg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1246a6"/>
+      <stop offset="100%" stop-color="#1783ff"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <g stroke="#1783ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+      <line x1="22" y1="46" x2="22" y2="18"/>
+      <line x1="22" y1="18" x2="12" y2="26"/>
+      <line x1="22" y1="18" x2="32" y2="26"/>
+      <line x1="22" y1="18" x2="22" y2="12"/>
+    </g>
+    <text x="46" y="40" font-family="Segoe UI, Roboto, sans-serif" font-weight="800" font-size="20" fill="url(#pg)">Power Grid</text>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="60" viewBox="0 0 180 60" role="img" aria-label="SunRise Labs">
+  <defs>
+    <linearGradient id="sun" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ed8936"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <circle cx="22" cy="36" r="10" fill="#ffedd5"/>
+    <path d="M12 36h20 M22 26v6 M16 28l4 4 M28 28l-4 4" stroke="#f59e0b" stroke-width="2"/>
+    <text x="46" y="40" font-family="Segoe UI, Roboto, sans-serif" font-weight="800" font-size="20" fill="url(#sun)">SunRise Labs</text>
+  </g>
+</svg>
