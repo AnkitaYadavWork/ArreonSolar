@@ -103,7 +103,7 @@ function About() {
           }}>
             {[
               { number: '10+', label: 'Years Experience' },
-              { number: '60K+', label: 'Projects Completed' },
+              { number: '200', label: 'Projects Completed' },
               { number: '98%', label: 'Customer Satisfaction' },
               { number: '40+', label: 'States Served' }
             ].map((stat, index) => (
@@ -358,7 +358,7 @@ We believe in clean energy, transparent execution, and long-term client partners
                 name: 'Sanjay Khuswaha',
                 location: 'Solar Park, Tamil Nadu',
                 quote:
-                  'We would like to thank the entire Arreon team for their excellent service. Our inquiries are always responded to promptly; the technical managers are thorough and knowledgeable; the follow-ups have always been courteous and pleasant.'
+                  'We would like to thank the entire Arreion team for their excellent service. Our inquiries are always responded to promptly; the technical managers are thorough and knowledgeable; the follow-ups have always been courteous and pleasant.'
               },
               {
                 name: 'Santosh Khare',

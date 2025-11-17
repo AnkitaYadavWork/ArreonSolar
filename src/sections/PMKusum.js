@@ -717,7 +717,7 @@ export default function KusumPage() {
               {[
                 {
                   question: "Is there a definite income?",
-                  answer: "Yes, with Sinko Energy, our clients going green isn't just good for the planet, but it's also a smart investment that generates income."
+                  answer: "Yes, with Arreion, our clients going green isn't just good for the planet, but it's also a smart investment that generates income."
                 },
                 {
                   question: "What costs are involved for the commission?",
@@ -725,7 +725,7 @@ export default function KusumPage() {
                 },
                 {
                   question: "Any support for Tender Process?",
-                  answer: "From paperwork to participation, Sinko Energy guides the clients through the tender process and provides expert support."
+                  answer: "From paperwork to participation, Arreion guides the clients through the tender process and provides expert support."
                 },
                 {
                   question: "Will the Generation be good?",
@@ -736,7 +736,7 @@ export default function KusumPage() {
                   answer: "The government launched the PM Kusum Yojana to promote solar energy in agriculture and enhance farmers' income through electricity generation."
                 },
                 {
-                  question: "How does Sinko help with the loan process?",
+                  question: "How does Arreion help with the loan process?",
                   answer: "We offer a smooth loan assistance that helps in reducing your investment stress and makes the entire loan process easier."
                 }
               ].map((faq, index) => (
@@ -860,7 +860,7 @@ export default function KusumPage() {
               color: '#b91c1c',
               marginBottom: '4rem'
             }}>
-              Voice of Happy Clients who Choose Sinko
+              Voice of Happy Clients who Choose Arreion
             </h2>
 
             <div style={{

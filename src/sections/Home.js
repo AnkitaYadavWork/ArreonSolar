@@ -2879,7 +2879,7 @@ function Home() {
                 {
                   name: 'Rishabh Singh',
                   role: 'CEO',
-                  description: 'Rishabh has been working in the renewable energy field for past 9 years. His business acumen and strategies have helped Arreion to be one of the leaders in Clean Energy and power sector.',
+                  description: 'Mr. Rishabh Singh, CEO, has more than 10 years of expertise in the solar industry and associated fields. Mr. Rishabh Singh adds a distinctive viewpoint to Solar Power, allowing us to create unique solutions that are specifically catered to the needs and demands of our clients. Arreion has become  a strong competitor in the solar energy business thanks to his enthusiasm for quality and innovation. His unique ability to forge long-lasting bonds with his clientele while offering them world-class services and dedication to quality has helped Arreion immensely.',
                   image: '👨‍💼' // Replace with actual image path
                 },
                 {

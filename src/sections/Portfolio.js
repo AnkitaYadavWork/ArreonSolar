@@ -260,6 +260,78 @@ export default function Portfolio() {
                     capacity: '420 KWp',
                     location: 'Bhilwara (Rajasthan)',
                   },
+                   {
+                    no: 17,
+                    client: 'Power Grid Corporation of India',
+                    capacity: '265 KWp',
+                    location: 'Orrisa',
+                  },
+                   {
+                    no: 18,
+                    client: 'Century Minechem Private Limited',
+                    capacity: '380 KWp',
+                    location: 'Rajasthan',
+                  },
+                   {
+                    no: 19,
+                    client: 'Aditya Birla Mines',
+                    capacity: '357 KWp',
+                    location: 'Jharkhand',
+                  },
+                   {
+                    no: 20,
+                    client: 'Olympus Glasses',
+                    capacity: '350 KWp',
+                    location: 'Sandila (UP)',
+                  },
+                   {
+                    no: 21,
+                    client: 'Ratan Housing & Development',
+                    capacity: '250 KWp',
+                    location: 'Kanpur',
+                  },
+                   {
+                    no: 22,
+                    client: 'Lulu Shopping Mall',
+                    capacity: '200 KWp',
+                    location: 'Lucknow (UP)',
+                  },
+                   {
+                    no: 23,
+                    client: 'Dental College',
+                    capacity: '170 KWp',
+                    location: 'Chennai (TN)',
+                  },
+                   {
+                    no: 24,
+                    client: 'Shree Bankey Bihari College',
+                    capacity: '150 KWp',
+                    location: 'Ghaziabad (UP)',
+                  },
+                   {
+                    no: 25,
+                    client: 'Mother Dairy',
+                    capacity: '150 KWp',
+                    location: 'Mumbai (Maharashtra)',
+                  },
+                   {
+                    no: 26,
+                    client: 'Shraddha Agro Food',
+                    capacity: '90 KWp',
+                    location: 'Prayagraj (UP)',
+                  },
+                   {
+                    no: 27,
+                    client: 'Cold Storage',
+                    capacity: '80 KWp',
+                    location: 'Delhi NCR',
+                  },
+                   {
+                    no: 28,
+                    client: 'Sai Cold Storage',
+                    capacity: '20 KWp',
+                    location: 'Bijapur',
+                  },
                 ].map((row, index) => (
                   <tr
                     key={row.no}
@@ -491,7 +563,7 @@ export default function Portfolio() {
             boxShadow: '0 16px 38px rgba(0,0,0,0.06)',
           }}
         >
-          <div
+          {/* <div
             style={{
               display: 'flex',
               justifyContent: 'space-between',
@@ -520,9 +592,9 @@ export default function Portfolio() {
             >
               Key Clients (17 - 28)
             </span>
-          </div>
+          </div> */}
 
-          <div
+          {/* <div
             style={{
               position: 'relative',
               paddingLeft: '20px',
@@ -696,7 +768,7 @@ export default function Portfolio() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
 
         {/* Project Images gallery */}
