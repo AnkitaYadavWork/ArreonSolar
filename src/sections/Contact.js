@@ -10,6 +10,17 @@ function Contact() {
   const [loading, setLoading] = React.useState(false);
   const [status, setStatus] = React.useState(null);
 
+  React.useEffect(() => {
+    // When Contact page mounts, scroll to the top of the contact section
+    if (typeof window === 'undefined') return;
+    const el = document.getElementById('contact');
+    if (el && typeof el.scrollIntoView === 'function') {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, []);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 

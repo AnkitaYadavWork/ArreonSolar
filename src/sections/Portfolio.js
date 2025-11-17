@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import SolarPanel1 from '../assets/images/SolarPanel1.jpg'
 import SolarPanel2 from '../assets/images/SolarPanel2.jpg'
 import SolarPanel3 from '../assets/images/SolarPanel3.jpg'
@@ -12,6 +12,18 @@ import SolarPanel10 from '../assets/images/SolarPanel10.jpg'
 import SolarPanel11 from '../assets/images/SolarPanel11.jpg'
 
 export default function Portfolio() {
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <div
       style={{
@@ -389,7 +401,7 @@ export default function Portfolio() {
         <div
           style={{
             marginTop: '80px',
-            padding: '32px 28px',
+            padding: isMobile ? '24px 18px' : '32px 28px',
             borderRadius: '12px',
             backgroundColor: '#fff4ea',
             boxShadow: '0 18px 40px rgba(0,0,0,0.06)',
@@ -398,17 +410,18 @@ export default function Portfolio() {
           <div
             style={{
               display: 'flex',
-              gap: '48px',
-              alignItems: 'flex-start',
+              flexDirection: isMobile ? 'column' : 'row',
+              gap: isMobile ? '28px' : '48px',
+              alignItems: isMobile ? 'stretch' : 'flex-start',
             }}
           >
             {/* Left text block */}
-            <div style={{ flex: '0 0 40%' }}>
+            <div style={{ flex: isMobile ? '1' : '0 0 40%' }}>
               <h3
                 style={{
                   margin: 0,
                   marginBottom: '18px',
-                  fontSize: '30px',
+                  fontSize: isMobile ? '24px' : '30px',
                   fontWeight: 700,
                   letterSpacing: '0.04em',
                   color: '#1a4b82',
@@ -481,15 +494,17 @@ export default function Portfolio() {
             <div
               style={{
                 flex: '1',
-                paddingTop: '8px',
+                paddingTop: isMobile ? '0' : '8px',
               }}
             >
               <div
                 style={{
                   display: 'grid',
-                  gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
-                  rowGap: '22px',
-                  columnGap: '26px',
+                  gridTemplateColumns: isMobile
+                    ? 'repeat(2, minmax(0, 1fr))'
+                    : 'repeat(3, minmax(0, 1fr))',
+                  rowGap: isMobile ? '14px' : '22px',
+                  columnGap: isMobile ? '14px' : '26px',
                 }}
               >
                 {[
@@ -528,22 +543,23 @@ export default function Portfolio() {
 
               <div
                 style={{
-                  marginTop: '34px',
+                  marginTop: isMobile ? '24px' : '34px',
                   display: 'flex',
                   justifyContent: 'center',
                 }}
               >
                 <div
                   style={{
-                    padding: '10px 26px',
+                    padding: isMobile ? '8px 18px' : '10px 26px',
                     borderRadius: '999px',
                     backgroundColor: '#e5c96b',
                     boxShadow: '0 12px 20px rgba(0,0,0,0.18)',
                     color: '#7b6a24',
-                    fontSize: '15px',
+                    fontSize: '14px',
                     fontWeight: 600,
                     textTransform: 'uppercase',
                     letterSpacing: '0.08em',
+                    textAlign: 'center',
                   }}
                 >
                   Post Construction Services

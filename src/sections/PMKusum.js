@@ -1,12 +1,22 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import { Sun, Zap, Droplets, IndianRupee } from "lucide-react";
 import pmkusumImage from "../assets/images/pmkusumimages.jpg";
 
 export default function KusumPage() {
     const theme = 'light'
+    const [isMobile, setIsMobile] = useState(false);
 
-  
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   useEffect(() => {
     document.title = "PM KUSUM Scheme - Arreion Power";
   }, []);
@@ -25,7 +35,7 @@ export default function KusumPage() {
         <div style={{
           position: 'relative',
           width: '100%',
-          height: '600px',
+          height: isMobile ? '420px' : '600px',
           backgroundImage: 'url(\'https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80\')',
           backgroundSize: 'cover',
           backgroundPosition: 'center'
@@ -47,11 +57,11 @@ export default function KusumPage() {
               justifyContent: 'center',
               alignItems: 'center',
               textAlign: 'center',
-              padding: '0 1rem'
+              padding: isMobile ? '0 1rem' : '0 1.5rem'
             }}>
               <div style={{ maxWidth: '56rem' }}>
                 <h1 style={{
-                  fontSize: '2.25rem',
+                  fontSize: isMobile ? '1.75rem' : '2.25rem',
                   fontWeight: 'bold',
                   marginBottom: '1.5rem',
                   color: '#111827'
@@ -59,7 +69,7 @@ export default function KusumPage() {
                   For PM KUSUM Yojana
                 </h1>
                 <p style={{
-                  fontSize: '1.5rem',
+                  fontSize: isMobile ? '1.25rem' : '1.5rem',
                   fontWeight: '600',
                   marginBottom: '1.5rem',
                   lineHeight: '1.25',
@@ -107,7 +117,7 @@ export default function KusumPage() {
 
         {/* About PM-KUSUM Section */}
         <div style={{
-          padding: '4rem 0',
+          padding: isMobile ? '3rem 0' : '4rem 0',
           transition: 'background-color 0.2s',
           backgroundColor: theme === 'dark' ? '#1f2937' : '#fef2f2'
         }}>
@@ -116,9 +126,9 @@ export default function KusumPage() {
             margin: '0 auto',
             padding: '0 1rem'
           }}>
-            <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <div style={{ textAlign: 'center', marginBottom: isMobile ? '2rem' : '3rem' }}>
               <h2 style={{
-                fontSize: '1.875rem',
+                fontSize: isMobile ? '1.5rem' : '1.875rem',
                 fontWeight: 'bold',
                 marginBottom: '1rem',
                 color: theme === 'dark' ? '#ffffff' : '#111827'
@@ -139,9 +149,11 @@ export default function KusumPage() {
               
               <div style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
-                gap: '2rem',
-                margin: '3rem 0'
+                gridTemplateColumns: isMobile
+                  ? 'repeat(1, minmax(0, 1fr))'
+                  : 'repeat(3, minmax(0, 1fr))',
+                gap: isMobile ? '1.5rem' : '2rem',
+                margin: isMobile ? '2.5rem 0' : '3rem 0'
               }}>
                 <div style={{
                   padding: '1.5rem',
@@ -278,7 +290,7 @@ export default function KusumPage() {
 
         {/* Components Section */}
         <div style={{
-          padding: '4rem 0',
+          padding: isMobile ? '3rem 0' : '4rem 0',
           backgroundColor: theme === 'dark' ? '#111827' : 'rgba(255, 255, 255, 0.7)'
         }}>
           <div style={{
@@ -286,9 +298,9 @@ export default function KusumPage() {
             margin: '0 auto',
             padding: '0 1rem'
           }}>
-            <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <div style={{ textAlign: 'center', marginBottom: isMobile ? '2rem' : '3rem' }}>
               <h2 style={{
-                fontSize: '1.875rem',
+                fontSize: isMobile ? '1.5rem' : '1.875rem',
                 fontWeight: 'bold',
                 marginBottom: '1rem',
                 color: theme === 'dark' ? '#ffffff' : '#111827'
@@ -298,8 +310,10 @@ export default function KusumPage() {
             
             <div style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
-              gap: '2rem',
+              gridTemplateColumns: isMobile
+                ? 'repeat(1, minmax(0, 1fr))'
+                : 'repeat(3, minmax(0, 1fr))',
+              gap: isMobile ? '1.5rem' : '2rem',
               maxWidth: '72rem',
               margin: '0 auto'
             }}>
@@ -419,7 +433,7 @@ export default function KusumPage() {
 
         {/* Benefits Section */}
         <div style={{
-          padding: '4rem 0',
+          padding: isMobile ? '3rem 0' : '4rem 0',
           backgroundColor: theme === 'dark' ? '#1f2937' : '#ffe4e6'
         }}>
           <div style={{
@@ -427,12 +441,17 @@ export default function KusumPage() {
             margin: '0 auto',
             padding: '0 1rem'
           }}>
-            <div style={{ display: 'flex', flexDirection: 'row', gap: '3rem', alignItems: 'center' }}>
+            <div style={{
+              display: 'flex',
+              flexDirection: isMobile ? 'column' : 'row',
+              gap: isMobile ? '2.5rem' : '3rem',
+              alignItems: isMobile ? 'stretch' : 'center'
+            }}>
               {/* Benefits Content (left) */}
               <div style={{ flex: '1 1 0%' }}>
                 <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
                   <h2 style={{
-                    fontSize: '1.875rem',
+                    fontSize: isMobile ? '1.5rem' : '1.875rem',
                     fontWeight: 'bold',
                     marginBottom: '1rem',
                     color: theme === 'dark' ? '#ffffff' : '#111827'
@@ -540,12 +559,22 @@ export default function KusumPage() {
               </div>
               
               {/* Benefits Image (right) */}
-              <div style={{ flex: '0 0 380px', display: 'flex', justifyContent: 'center' }}>
+              <div style={{
+                flex: isMobile ? '1 1 auto' : '0 0 380px',
+                display: 'flex',
+                justifyContent: 'center'
+              }}>
                 <div style={{ backgroundColor: '#ffffff', padding: '1rem', borderRadius: '0.75rem', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)', overflow: 'hidden', width: '100%' }}>
                   <img 
                     src={pmkusumImage}
                     alt="Solar project under development"
-                    style={{ width: '100%', height: '240px', borderRadius: '0.5rem', objectFit: 'cover', display: 'block' }}
+                    style={{
+                      width: '100%',
+                      height: isMobile ? '220px' : '240px',
+                      borderRadius: '0.5rem',
+                      objectFit: 'cover',
+                      display: 'block'
+                    }}
                   />
                 </div>
               </div>
@@ -554,18 +583,22 @@ export default function KusumPage() {
         </div>
 
         {/* Eligibility Section */}
-        <div style={{ padding: '4rem 0', backgroundColor: 'rgba(255, 255, 255, 0.7)' }}>
+        <div style={{ padding: isMobile ? '3rem 0' : '4rem 0', backgroundColor: 'rgba(255, 255, 255, 0.7)' }}>
           <div style={{
             maxWidth: '80rem',
             margin: '0 auto',
             padding: '0 1rem'
           }}>
-            <div style={{ display: 'flex', flexDirection: 'column-reverse', gap: '3rem' }}>
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column-reverse',
+              gap: isMobile ? '2.5rem' : '3rem'
+            }}>
               {/* Eligibility Content */}
               <div style={{ flex: '1 1 0%' }}>
                 <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
                   <h2 style={{
-                    fontSize: '1.875rem',
+                    fontSize: isMobile ? '1.5rem' : '1.875rem',
                     fontWeight: 'bold',
                     marginBottom: '1rem',
                     color: '#111827'
@@ -850,26 +883,26 @@ export default function KusumPage() {
         <section style={{
           backgroundColor: 'rgba(255, 255, 255, 0.8)',
           backdropFilter: 'blur(4px)',
-          padding: '4rem 1rem'
+          padding: isMobile ? '3rem 1rem' : '4rem 1rem'
         }}>
           <div style={{ maxWidth: '80rem', margin: '0 auto' }}>
             <h2 style={{
-              fontSize: '2.25rem',
+              fontSize: isMobile ? '1.75rem' : '2.25rem',
               fontWeight: 'bold',
               textAlign: 'center',
               color: '#b91c1c',
-              marginBottom: '4rem'
+              marginBottom: isMobile ? '2.5rem' : '4rem'
             }}>
               Voice of Happy Clients who Choose Arreion
             </h2>
 
             <div style={{
               display: 'flex',
-              flexWrap: 'nowrap',
+              flexWrap: 'wrap',
               justifyContent: 'center',
-              gap: '2rem',
+              gap: isMobile ? '1.5rem' : '2rem',
               paddingBottom: '1rem',
-              marginBottom: '3rem'
+              marginBottom: isMobile ? '2.5rem' : '3rem'
             }}>
               {[
                 {
@@ -910,8 +943,8 @@ export default function KusumPage() {
                   alignItems: 'center'
                 }}>
                   <div style={{
-                    width: '12rem',
-                    height: '12rem',
+                    width: isMobile ? '10rem' : '12rem',
+                    height: isMobile ? '10rem' : '12rem',
                     borderRadius: '1.5rem',
                     overflow: 'hidden',
                     marginBottom: '1.5rem',
@@ -927,7 +960,7 @@ export default function KusumPage() {
                       }}
                     />
                   </div>
-                  <div style={{ textAlign: 'center', width: '12rem' }}>
+                  <div style={{ textAlign: 'center', width: isMobile ? '10rem' : '12rem' }}>
                     <h3 style={{
                       fontWeight: 'bold',
                       color: '#111827',

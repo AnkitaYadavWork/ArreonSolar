@@ -192,7 +192,10 @@ function Navbar() {
                   e.target.style.borderBottomColor = 'transparent';
                 }
               }}
-              onClick={() => setActive(l.to)}
+              onClick={() => {
+      setActive(l.to);
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }}
             >
               {l.label}
               <span style={{
@@ -252,7 +255,10 @@ function Navbar() {
               color: active === l.to ? '#E10210' : '#0b1a24',
               fontWeight: active === l.to ? 600 : 500
             }}
-            onClick={() => setActive(l.to)}
+            onClick={() => {
+      setActive(l.to);
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }}
           >
             {l.label}
             {active === l.to && (
@@ -265,53 +271,7 @@ function Navbar() {
             )}
           </NavLink>
         ))}
-        <a 
-            href="https://slnkoenergy.com/kusum"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              marginLeft: '16px',
-              padding: '10px 20px 10px 30px',
-              borderRadius: '30px',
-              background: '#ffffff',
-              color: '#333333',
-              fontWeight: 700,
-              letterSpacing: '0.5px',
-              textTransform: 'uppercase',
-              textDecoration: 'none',
-              transition: 'all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
-              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.1)',
-              border: '2px solid #E10210',
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '8px'
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.color = '#ffffff';
-              e.currentTarget.style.transform = 'translateY(-3px)';
-              e.currentTarget.style.boxShadow = '0 6px 25px rgba(225, 2, 16, 0.5)';
-              e.currentTarget.style.background = 'linear-gradient(45deg, #E10210, #ff4d4d)';
-              e.currentTarget.style.borderColor = 'transparent';
-              e.currentTarget.querySelector('svg').style.transform = 'translate(2px, -2px)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.color = '#333333';
-              e.currentTarget.style.transform = 'none';
-              e.currentTarget.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.1)';
-              e.currentTarget.style.background = '#ffffff';
-              e.currentTarget.style.borderColor = '#E10210';
-              e.currentTarget.querySelector('svg').style.transform = 'none';
-            }}
-          >
-            Visit PM Kusum Yojana
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style={{
-              transition: 'transform 0.3s ease',
-              marginLeft: '4px'
-            }}>
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
-          </a>
+        
       </div>
 
       {/* Overlay when mobile menu is open */}
