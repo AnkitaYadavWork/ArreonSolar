@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import logo from '../assets/images/logo solar.jpg';
 
 const FooterContainer = styled.footer`
   background: #0b1a24;
@@ -26,39 +25,39 @@ const FooterTop = styled.div`
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 `;
 
-const Logo = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #e21313ff;
-  text-decoration: none;
-  borderRadius: '8px';
-  img {
-    height: 40px;
-    width: auto;
-  }
-`;
+// const Logo = styled.div`
+//   display: flex;
+//   align-items: center;
+//   gap: 5px;
+//   font-size: 1.5rem;
+//   font-weight: 700;
+//   color: #e21313ff;
+//   text-decoration: none;
+//   borderRadius: '8px';
+//   img {
+//     height: 40px;
+//     width: auto;
+//   }
+// `;
 
-const FooterLinks = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 10px;
+// const FooterLinks = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   flex-wrap: wrap;
+//   gap: 20px;
+//   margin-top: 10px;
   
-  a {
-    color: #94a3b8;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    font-size: 0.95rem;
+//   a {
+//     color: #94a3b8;
+//     text-decoration: none;
+//     transition: color 0.3s ease;
+//     font-size: 0.95rem;
     
-    &:hover {
-      color: #16a34a;
-    }
-  }
-`;
+//     &:hover {
+//       color: #16a34a;
+//     }
+//   }
+// `;
 
 const SocialIcons = styled.div`
   display: flex;

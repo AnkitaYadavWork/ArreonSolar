@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 function About() {
   const solutionsRef = useRef(null);
   const location = useLocation();
-  const containerStyle = { maxWidth: 1180, margin: '0 auto', padding: '0 24px' };
+  // const containerStyle = { maxWidth: 1180, margin: '0 auto', padding: '0 24px' };
 
   useEffect(() => {
     // Check if we should scroll to solutions
