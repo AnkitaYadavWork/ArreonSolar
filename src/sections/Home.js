@@ -1174,7 +1174,7 @@ function Home() {
                   <img
                     src={ b.file}
                     alt={`${b.name} logo`}
-                    style={{ height: 70, maxWidth: '100%', objectFit: 'contain', filter: 'grayscale(0%)', opacity: 0.98 }}
+                    style={{ height: 110, maxWidth: '100%', objectFit: 'contain', filter: 'grayscale(0%)', opacity: 0.98 }}
                     onError={(e) => { e.currentTarget.src = process.env.PUBLIC_URL + '/logos/' + b.file.replace('.png','.svg'); }}
                   />
                   
@@ -2849,129 +2849,7 @@ function Home() {
         </div>
       </section>
       
-      {/* Team Members Section */}
-      <section style={{
-        padding: '80px 0',
-        background: '#f8fafc',
-        position: 'relative',
-        overflow: 'hidden'
-      }}>
-        <div style={{
-          ...containerStyle,
-          position: 'relative',
-          zIndex: 2
-        }}>
-          <div style={{
-            marginTop: '0',
-            textAlign: 'center'
-          }}>
-            <h2 style={{
-              fontSize: 'clamp(28px, 5vw, 42px)',
-              fontWeight: 800,
-              color: '#0f172a',
-              margin: '0 0 60px',
-              position: 'relative',
-              display: 'inline-block',
-              '::after': {
-                content: '""',
-                position: 'absolute',
-                bottom: '-15px',
-                left: '50%',
-                transform: 'translateX(-50%)',
-                width: '80px',
-                height: '4px',
-                background: 'linear-gradient(90deg, #e53e3e, #f56565)',
-                borderRadius: '2px'
-              }
-            }}>
-              Our Leadership Team
-            </h2>
-            
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-              gap: '40px',
-              marginTop: '40px'
-            }}>
-              {[
-                {
-                  name: 'Rishabh Singh',
-                  role: 'CEO',
-                  description: 'Mr. Rishabh Singh, CEO, has more than 10 years of expertise in the solar industry and associated fields. Mr. Rishabh Singh adds a distinctive viewpoint to Solar Power, allowing us to create unique solutions that are specifically catered to the needs and demands of our clients. Arreion has become  a strong competitor in the solar energy business thanks to his enthusiasm for quality and innovation. His unique ability to forge long-lasting bonds with his clientele while offering them world-class services and dedication to quality has helped Arreion immensely.',
-                  image: '👨‍💼' // Replace with actual image path
-                },
-                {
-                  name: 'Priyanka Singh',
-                  role: 'Director',
-                  description: 'Priyanka emphasises on execution and meticulous planning for business success. She believes in turning aspirations into achievements through precise strategic execution. Her strong leadership, foresightedness and creative approach drive the company towards sustainable growth.',
-                  image: '👩‍💼' // Replace with actual image path
-                },
-                {
-                  name: 'Dhanajay Singh',
-                  role: 'Director',
-                  description: 'Working on the principle "Network is Net worth", with more than twenty years of experience in management & Entrepreneurship education. He is one of the torch bearers to develop Vision & mission of the company for sustainable and green world.',
-                  image: '👨‍💼' // Replace with actual image path
-                }
-              ].map((member, index) => (
-                <div key={index} style={{
-                  background: 'white',
-                  borderRadius: '16px',
-                  padding: '30px',
-                  boxShadow: '0 10px 30px rgba(0,0,0,0.05)',
-                  border: '1px solid #e2e8f0',
-                  transition: 'all 0.3s ease',
-                  ':hover': {
-                    transform: 'translateY(-5px)',
-                    boxShadow: '0 15px 40px rgba(0,0,0,0.1)'
-                  },
-                  textAlign: 'center'
-                }}>
-                  <div style={{
-                    width: '120px',
-                    height: '120px',
-                    borderRadius: '50%',
-                    background: '#f8fafc',
-                    margin: '0 auto 20px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontSize: '50px',
-                    color: '#e53e3e',
-                    border: '3px solid #ffebee'
-                  }}>
-                    {member.image}
-                  </div>
-                  <h3 style={{
-                    fontSize: '22px',
-                    color: '#1e293b',
-                    margin: '0 0 5px',
-                    fontWeight: 700
-                  }}>
-                    {member.name}
-                  </h3>
-                  <div style={{
-                    color: '#e53e3e',
-                    fontWeight: 600,
-                    marginBottom: '15px',
-                    fontSize: '16px'
-                  }}>
-                    {member.role}
-                  </div>
-                  <p style={{
-                    color: '#64748b',
-                    lineHeight: '1.7',
-                    margin: 0,
-                    fontSize: '15px'
-                  }}>
-                    {member.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-      
+   
     
       
       {/* WhatsApp Floating Button */}

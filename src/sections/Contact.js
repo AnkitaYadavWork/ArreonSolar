@@ -71,8 +71,8 @@ function Contact() {
       <div style={{ textAlign: 'center', marginBottom: '50px' }}>
         <span style={{
           display: 'inline-block',
-          background: '#e0f2fe',
-          color: '#0369a1',
+          background: '#e4684f52',
+          color: '#a10303ff',
           padding: '6px 16px',
           borderRadius: '20px',
           fontSize: '0.9rem',
@@ -219,7 +219,8 @@ function Contact() {
           <h3 style={{
             fontSize: '1.5rem',
             margin: '0 0 30px',
-            fontWeight: '700'
+            fontWeight: '700',
+            color: 'black',
           }}>
             Contact Information
           </h3>
@@ -318,7 +319,7 @@ function Contact() {
           </div>
 
           <div style={{ marginTop: '40px' }}>
-            <h4 style={{ margin: '0 0 15px', fontSize: '1rem', fontWeight: '600' }}>Business Hours</h4>
+            <h4 style={{ margin: '0 0 15px', fontSize: '1rem', fontWeight: '600', color: 'black' }}>Business Hours</h4>
             <p style={{ margin: '0 0 5px', opacity: 0.9 }}>Monday - Friday: 9:00 AM - 6:00 PM</p>
             <p style={{ margin: '5px 0 0', opacity: 0.9 }}>Saturday: 10:00 AM - 4:00 PM</p>
             <p style={{ margin: '5px 0 0', opacity: 0.9 }}>Sunday: Closed</p>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 
 const FooterContainer = styled.footer`
   background: #0b1a24;
@@ -61,16 +62,65 @@ const FooterTop = styled.div`
 
 const SocialIcons = styled.div`
   display: flex;
-  gap: 15px;
-  margin-top: 5px;
-  
+  justify-content: center;
+  gap: 16px;
+  margin-top: 12px;
+
   a {
-    color: #94a3b8;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-    
-    &:hover {
-      color: #16a34a;
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    background: rgba(15, 23, 42, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e2e8f0;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    box-shadow: 0 0 0 rgba(15, 23, 42, 0);
+  }
+
+  a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(15, 23, 42, 0.35);
+    border-color: transparent;
+  }
+
+  a:active {
+    transform: translateY(-1px) scale(0.98);
+    box-shadow: 0 6px 14px rgba(15, 23, 42, 0.25);
+  }
+
+  /* Brand-specific hover colors */
+  a.facebook:hover {
+    background: #1877f2;
+    color: #ffffff;
+  }
+
+  a.twitter:hover {
+    background: #1da1f2;
+    color: #ffffff;
+  }
+
+  a.linkedin:hover {
+    background: #0a66c2;
+    color: #ffffff;
+  }
+
+  a.instagram:hover {
+    background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af);
+    color: #ffffff;
+  }
+
+  @media (max-width: 640px) {
+    gap: 12px;
+
+    a {
+      width: 36px;
+      height: 36px;
+      font-size: 1rem;
     }
   }
 `;
@@ -168,27 +218,37 @@ function Footer() {
               <span>Get Free Quote</span>
               <span>→</span>
             </Link>
-            <button style={{
-              background: 'rgba(255, 255, 255, 0.1)',
-              color: 'white',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
-              padding: '14px 32px',
-              borderRadius: '8px',
-              fontSize: '16px',
-              fontWeight: 600,
-              cursor: 'pointer',
-              transition: 'all 0.3s ease',
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '8px',
-              ':hover': {
-                background: 'rgba(255, 255, 255, 0.2)',
-                transform: 'translateY(-2px)'
-              }
-            }}>
-              <span>📞 Call Now</span>
+            <a 
+              href="tel:+919876543210"
+              style={{
+                background: 'rgba(255, 255, 255, 0.1)',
+                color: 'white',
+                border: '1px solid rgba(255, 255, 255, 0.2)',
+                padding: '14px 32px',
+                borderRadius: '8px',
+                fontSize: '16px',
+                fontWeight: 600,
+                cursor: 'pointer',
+                transition: 'all 0.3s ease',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                textDecoration: 'none',
+                '&:hover': {
+                  background: 'rgba(255, 255, 255, 0.2)',
+                  transform: 'translateY(-2px)'
+                }
+              }}
+              css={{
+                '&:hover': {
+                  background: 'rgba(255, 255, 255, 0.2)',
+                  transform: 'translateY(-2px)'
+                }
+              }}
+            >
+              <span >📞 Call Now</span>
               <span>+91 98765 43210</span>
-            </button>
+            </a>
           </div>
           <div style={{
             display: 'flex',
@@ -235,17 +295,41 @@ function Footer() {
           
           
           <SocialIcons>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              <i className="fab fa-facebook-f"></i>
+            <a
+              className="facebook"
+              href="https://www.facebook.com/share/1CuYHDF8ut/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <FaFacebookF />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-              <i className="fab fa-twitter"></i>
+            <a
+              className="twitter"
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
+              <FaTwitter />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <i className="fab fa-linkedin-in"></i>
+            <a
+              className="linkedin"
+              href="https://www.linkedin.com/company/104818921/admin/page-posts/published/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedinIn />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <i className="fab fa-instagram"></i>
+            <a
+              className="instagram"
+              href="https://www.instagram.com/arreionpower?igsh=MWZkb20zY2t1azBrNA=="
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <FaInstagram />
             </a>
           </SocialIcons>
         </FooterTop>

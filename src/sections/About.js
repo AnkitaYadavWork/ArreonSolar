@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 function About() {
   const solutionsRef = useRef(null);
   const location = useLocation();
-  // const containerStyle = { maxWidth: 1180, margin: '0 auto', padding: '0 24px' };
+  const containerStyle = { maxWidth: 1180, margin: '0 auto', padding: '0 24px' };
 
   useEffect(() => {
     // Check if we should scroll to solutions
@@ -217,7 +217,275 @@ We believe in clean energy, transparent execution, and long-term client partners
           </p>
         </div>
 
-        {/* Our Services */}
+ {/* Team Members Section */}
+          <section style={{
+        padding: '80px 0',
+        background: '#f8fafc',
+        position: 'relative',
+        overflow: 'hidden'
+      }}>
+        <div style={{
+          ...containerStyle,
+          position: 'relative',
+          zIndex: 2
+        }}>
+          <div style={{
+            marginTop: '0',
+            textAlign: 'center'
+          }}>
+            <h2 style={{
+              fontSize: 'clamp(28px, 5vw, 42px)',
+              fontWeight: 800,
+              color: '#0f172a',
+              margin: '0 0 60px',
+              position: 'relative',
+              display: 'inline-block',
+              '::after': {
+                content: '""',
+                position: 'absolute',
+                bottom: '-15px',
+                left: '50%',
+                transform: 'translateX(-50%)',
+                width: '80px',
+                height: '4px',
+                background: 'linear-gradient(90deg, #e53e3e, #f56565)',
+                borderRadius: '2px'
+              }
+            }}>
+              Our Leadership Team
+            </h2>
+            
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+              gap: '40px',
+              marginTop: '40px'
+            }}>
+              {[
+                {
+                  name: 'Rishabh Singh',
+                  role: 'CEO',
+                  description: 'Mr. Rishabh Singh, CEO, has more than 10 years of expertise in the solar industry and associated fields. Mr. Rishabh Singh adds a distinctive viewpoint to Solar Power, allowing us to create unique solutions that are specifically catered to the needs and demands of our clients. Arreion has become  a strong competitor in the solar energy business thanks to his enthusiasm for quality and innovation. His unique ability to forge long-lasting bonds with his clientele while offering them world-class services and dedication to quality has helped Arreion immensely.',
+                  image: '👨‍💼' // Replace with actual image path
+                },
+                {
+                  name: 'Priyanka Singh',
+                  role: 'Director',
+                  description: 'Priyanka emphasises on execution and meticulous planning for business success. She believes in turning aspirations into achievements through precise strategic execution. Her strong leadership, foresightedness and creative approach drive the company towards sustainable growth.',
+                  image: '👩‍💼' // Replace with actual image path
+                },
+                {
+                  name: 'Dhanajay Singh',
+                  role: 'Director',
+                  description: 'Working on the principle "Network is Net worth", with more than twenty years of experience in management & Entrepreneurship education. He is one of the torch bearers to develop Vision & mission of the company for sustainable and green world.',
+                  image: '👨‍💼' // Replace with actual image path
+                }
+              ].map((member, index) => (
+                <div key={index} style={{
+                  background: 'white',
+                  borderRadius: '16px',
+                  padding: '30px',
+                  boxShadow: '0 10px 30px rgba(0,0,0,0.05)',
+                  border: '1px solid #e2e8f0',
+                  transition: 'all 0.3s ease',
+                  ':hover': {
+                    transform: 'translateY(-5px)',
+                    boxShadow: '0 15px 40px rgba(0,0,0,0.1)'
+                  },
+                  textAlign: 'center'
+                }}>
+                  <div style={{
+                    width: '120px',
+                    height: '120px',
+                    borderRadius: '50%',
+                    background: '#f8fafc',
+                    margin: '0 auto 20px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontSize: '50px',
+                    color: '#e53e3e',
+                    border: '3px solid #ffebee'
+                  }}>
+                    {member.image}
+                  </div>
+                  <h3 style={{
+                    fontSize: '22px',
+                    color: '#1e293b',
+                    margin: '0 0 5px',
+                    fontWeight: 700
+                  }}>
+                    {member.name}
+                  </h3>
+                  <div style={{
+                    color: '#e53e3e',
+                    fontWeight: 600,
+                    marginBottom: '15px',
+                    fontSize: '16px'
+                  }}>
+                    {member.role}
+                  </div>
+                  <p style={{
+                    color: '#64748b',
+                    lineHeight: '1.7',
+                    margin: 0,
+                    fontSize: '15px'
+                  }}>
+                    {member.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>   
+
+      {/* Message from Management */}
+      <section style={{
+        background: '#FFFFFF',
+        padding: '40px 0 100px 0',
+        position: 'relative',
+        overflow: 'hidden',
+        marginTop: '-40px'
+      }}>
+        <div style={containerStyle}>
+          <div style={{
+            background: 'transparent',
+            padding: '60px 0',
+            position: 'relative',
+            overflow: 'hidden'
+          }}>
+            {/* Decorative elements */}
+            <div style={{
+              position: 'absolute',
+              top: 0,
+              right: 0,
+              width: '300px',
+              height: '300px',
+              background: 'radial-gradient(circle, rgba(239, 68, 68, 0.08) 0%, rgba(255,255,255,0) 70%)',
+              borderRadius: '50%',
+              transform: 'translate(30%, -30%)'
+            }}></div>
+            
+            <div style={{
+              position: 'relative',
+              zIndex: 2
+            }}>
+              <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                marginBottom: '30px'
+              }}>
+                <div style={{
+                  width: '5px',
+                  height: '50px',
+                  background: 'linear-gradient(45deg, #EF4444 0%, #F97316 100%)',
+                  marginRight: '20px',
+                  borderRadius: '3px'
+                }}></div>
+                <h2 style={{
+                  fontSize: '32px',
+                  fontWeight: 800,
+                  color: 'black',
+                  margin: 0,
+                  letterSpacing: '-0.5px'
+                }}>
+                  Message from Management
+                </h2>
+              </div>
+
+              <div style={{
+                color: '#4B5563',
+                lineHeight: 1.8,
+                fontSize: '17px',
+                maxWidth: '900px'
+              }}>
+                <p style={{ 
+                  marginBottom: '25px',
+                  position: 'relative',
+                  paddingLeft: '25px',
+                  borderLeft: '3px solid #EF4444'
+                }}>
+                  At <strong>Arreion</strong>, we are more than just a team — we are a community united by a shared mission: to empower businesses and industries across India with clean, reliable, and cost-efficient solar energy solutions. As a leading B2B Solar EPC (Engineering, Procurement, and Construction) company, we are committed to delivering end-to-end solar solutions that drive operational efficiency and long-term savings.
+                </p>
+                
+                <p style={{ 
+                  marginBottom: '25px',
+                  position: 'relative',
+                  paddingLeft: '25px',
+                  borderLeft: '3px solid #EF4444'
+                }}>
+                  Our work goes far beyond installing solar panels. We believe every project is unique, and our approach reflects that. With a strong philosophy built around the <strong>5 Cs — Customer, Commitment, Conviction, Compassion & Competitor</strong> — we ensure that every solution is tailored to your specific requirements. From the first consultation to project design, execution, commissioning, and ongoing maintenance, our team stands with you at every stage of your solar journey.
+                </p>
+
+                <div style={{
+                  background: 'linear-gradient(90deg, #FEE2E2 0%, #FEF3C7 100%)',
+                  borderRadius: '12px',
+                  padding: '25px 30px',
+                  margin: '30px 0',
+                  borderLeft: '4px solid #EF4444'
+                }}>
+                  <p style={{
+                    fontSize: '18px',
+                    fontStyle: 'italic',
+                    color: '#9A3412',
+                    margin: 0,
+                    lineHeight: 1.7
+                  }}>
+                    "Our vision is bigger than individual projects. We are dedicated to accelerating India's transition to renewable energy by offering innovative, scalable, and affordable solar solutions. Through our work, we aim to reduce carbon footprints, empower communities, and contribute to a greener and more sustainable future for the nation."
+                  </p>
+                </div>
+
+                <p style={{ 
+                  marginBottom: '25px',
+                  position: 'relative',
+                  paddingLeft: '25px',
+                  borderLeft: '3px solid #EF4444'
+                }}>
+                  We invite you to connect with us and explore how Arreion can help your business adopt clean energy while enhancing productivity and reducing operational costs. Together, let's build a brighter, cleaner, and energy-secure future for India.
+                </p>
+              </div>
+
+              <div style={{
+                marginTop: '40px',
+                paddingTop: '30px',
+                borderTop: '1px dashed #F87171',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-start'
+              }}>
+                <div style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  marginBottom: '10px'
+                }}>
+                  <div style={{
+                    width: '80px',
+                    height: '4px',
+                    background: 'linear-gradient(45deg, #EF4444 0%, #F97316 100%)',
+                    borderRadius: '2px',
+                    marginRight: '20px'
+                  }}></div>
+                  <div>
+                    <div style={{
+                      fontWeight: 700,
+                      color: '#EF44442',
+                      fontSize: '18px'
+                    }}>The Arreion Management Team</div>
+                    <div style={{
+                      fontSize: '15px',
+                      color: '#EF4444',
+                      fontWeight: 500
+                    }}>Empowering India's Solar Future</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Services */}
         <div ref={solutionsRef} id="solutions" style={{
           marginBottom: '60px',
           scrollMarginTop: '80px' // Adjust this value based on your header height
@@ -328,125 +596,7 @@ We believe in clean energy, transparent execution, and long-term client partners
             ))}
           </div>
         </div>
-
-
-        {/* Team Section */}
-        <div style={{ marginBottom: '60px' }}>
-          <h2 style={{
-            color: 'black',
-            marginBottom: '10px',
-            fontSize: '2.3rem',
-            textAlign: 'center'
-          }}>Client Testimonial</h2>
-          <p style={{
-            textAlign: 'center',
-            color: 'black',
-            marginBottom: '35px',
-            fontSize: '1rem'
-          }}>
-            Hear from our customers who trusted Arreion for their solar projects.
-          </p>
-
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
-            gap: '30px',
-            marginTop: '20px'
-          }}>
-            {[
-              {
-                name: 'Sanjay Khuswaha',
-                location: 'Solar Park, Tamil Nadu',
-                quote:
-                  'We would like to thank the entire Arreion team for their excellent service. Our inquiries are always responded to promptly; the technical managers are thorough and knowledgeable; the follow-ups have always been courteous and pleasant.'
-              },
-              {
-                name: 'Santosh Khare',
-                location: 'Chhindwara, M.P.',
-                quote:
-                  'Consistently maintained the quality of work without compromising the timeline is why we decided to give you turnkey EPC for our solar PV plant. A team full of cutting edge talent.'
-              },
-              {
-                name: 'Atul Kumar',
-                location: 'Kanpur, U.P.',
-                quote:
-                  'We have been lucky to have found one of the finest solar companies in the country. Your concepts to commissioning services have enabled us to focus on our core business and simultaneously develop a second line of business under your expert guidance.'
-              },
-              {
-                name: 'Sushil Gupta',
-                location: 'Bikaner, Rajasthan',
-                quote:
-                  'Would like to thank you for the professionalism shown by your company all throughout the project. Arreion consistently went the extra mile to ensure that the project becomes operational at the earliest date.'
-              }
-            ].map((t, index) => (
-              <div
-                key={index}
-                style={{
-                  background: 'linear-gradient(145deg, #ffe4e1, #fff7f4)',
-                  borderRadius: '24px',
-                  boxShadow: '0 12px 28px rgba(248, 113, 113, 0.25)',
-                  padding: '26px 26px 30px',
-                  position: 'relative',
-                  overflow: 'hidden'
-                }}
-              >
-                <div
-                  style={{
-                    position: 'absolute',
-                    top: '-10px',
-                    left: '18px',
-                    fontSize: '50px',
-                    color: '#fbbf2440',
-                    fontWeight: 700
-                  }}
-                >
-                  “
-                </div>
-                <div style={{ marginTop: '20px' }}>
-                  <h3
-                    style={{
-                      margin: '0 0 4px',
-                      fontSize: '1.1rem',
-                      fontWeight: 700,
-                      color: '#7f1d1d'
-                    }}
-                  >
-                    {t.name}
-                  </h3>
-                  <div
-                    style={{
-                      marginBottom: '12px',
-                      fontSize: '0.9rem',
-                      color: '#9f1239'
-                    }}
-                  >
-                    {t.location}
-                  </div>
-                  <p
-                    style={{
-                      margin: 0,
-                      fontSize: '0.95rem',
-                      lineHeight: 1.6,
-                      color: '#7c2d12'
-                    }}
-                  >
-                    {t.quote}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-
-
-
-
-
         {/* Content */}
-
-
-
       </section>
     </div>
   );

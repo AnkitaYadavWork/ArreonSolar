@@ -9,6 +9,7 @@ function Solutions() {
   const [activeTab, setActiveTab] = useState('residential');
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const navigate = useNavigate();
+  const containerStyle = { maxWidth: 1180, margin: '0 auto', padding: '0 24px' };
 
   useEffect(() => {
     const handleResize = () => {
@@ -661,6 +662,202 @@ function Solutions() {
         </div>
       </div>
 
+      {/* Solar EPC Section */}
+      <div style={{ 
+        margin: '60px 0',
+        position: 'relative',
+        overflow: 'hidden'
+      }}>
+        <div style={containerStyle}>
+          <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+            <h2 style={{
+              fontSize: '2.5rem',
+              fontWeight: 800,
+              color: '#1e293b',
+              marginBottom: '15px',
+              position: 'relative',
+              display: 'inline-block'
+            }}>
+              Solar EPC – By Arreion
+              <span style={{
+                display: 'block',
+                width: '80px',
+                height: '4px',
+                background: 'linear-gradient(90deg, #EF4444 0%, #F97316 100%)',
+                margin: '15px auto 0',
+                borderRadius: '2px'
+              }}></span>
+            </h2>
+            <p style={{
+              color: '#64748b',
+              fontSize: '1.1rem',
+              maxWidth: '800px',
+              margin: '20px auto 0',
+              lineHeight: '1.7'
+            }}>
+              At Arreion, we deliver complete Solar EPC (Engineering, Procurement & Construction) solutions, 
+              making your shift to renewable energy simple, efficient, and worry-free.
+            </p>
+          </div>
+
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+            gap: '30px',
+            marginTop: '40px'
+          }}>
+            {/* Engineering Card */}
+            <div style={{
+              background: '#fff',
+              borderRadius: '16px',
+              padding: '35px 30px',
+              boxShadow: '0 10px 30px rgba(0,0,0,0.05)',
+              border: '1px solid rgba(239, 68, 68, 0.1)',
+              position: 'relative',
+              overflow: 'hidden',
+              transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+            }}>
+              <div style={{
+                width: '60px',
+                height: '60px',
+                background: 'linear-gradient(135deg, #FEE2E2 0%, #FEF3C7 100%)',
+                borderRadius: '12px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                marginBottom: '25px'
+              }}>
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" fill="#EF4444"/>
+                  <path d="M12 2V4" stroke="#EF4444" strokeWidth="2" strokeLinecap="round"/>
+                  <path d="M12 20V22" stroke="#EF4444" strokeWidth="2" strokeLinecap="round"/>
+                  <path d="M4.92999 4.92999L6.33999 6.33999" stroke="#EF4444" strokeWidth="2" strokeLinecap="round"/>
+                  <path d="M17.66 17.66L19.07 19.07" stroke="#EF4444" strokeWidth="2" strokeLinecap="round"/>
+                  <path d="M2 12H4" stroke="#EF4444" strokeWidth="2" strokeLinecap="round"/>
+                  <path d="M20 12H22" stroke="#EF4444" strokeWidth="2" strokeLinecap="round"/>
+                  <path d="M6.33999 17.66L4.92999 19.07" stroke="#EF4444" strokeWidth="2" strokeLinecap="round"/>
+                  <path d="M19.07 4.92999L17.66 6.33999" stroke="#EF4444" strokeWidth="2" strokeLinecap="round"/>
+                </svg>
+              </div>
+              <h3 style={{
+                fontSize: '1.5rem',
+                fontWeight: 700,
+                color: '#1e293b',
+                marginBottom: '15px'
+              }}>Engineering</h3>
+              <p style={{
+                color: '#64748b',
+                lineHeight: '1.7',
+                margin: 0
+              }}>
+                We study your power requirements, perform a detailed site survey, check weather and shadow conditions, and design a customized solar system. Our precise planning and 3D layouts ensure maximum efficiency and safety.
+              </p>
+            </div>
+
+            {/* Procurement Card */}
+            <div style={{
+              background: '#fff',
+              borderRadius: '16px',
+              padding: '35px 30px',
+              boxShadow: '0 10px 30px rgba(0,0,0,0.05)',
+              border: '1px solid rgba(239, 68, 68, 0.1)',
+              position: 'relative',
+              overflow: 'hidden',
+              transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+            }}>
+              <div style={{
+                width: '60px',
+                height: '60px',
+                background: 'linear-gradient(135deg, #FEE2E2 0%, #FEF3C7 100%)',
+                borderRadius: '12px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                marginBottom: '25px'
+              }}>
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 7H4C2.89543 7 2 7.89543 2 9V19C2 20.1046 2.89543 21 4 21H20C21.1046 21 22 20.1046 22 19V9C22 7.89543 21.1046 7 20 7Z" stroke="#EF4444" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M16 21V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V21" stroke="#EF4444" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+              <h3 style={{
+                fontSize: '1.5rem',
+                fontWeight: 700,
+                color: '#1e293b',
+                marginBottom: '15px'
+              }}>Procurement</h3>
+              <p style={{
+                color: '#64748b',
+                lineHeight: '1.7',
+                margin: 0
+              }}>
+                Arreion sources premium-quality components — Tier-1 solar panels, high-efficiency inverters, mounting structures, cables, and safety devices. Every material is chosen for durability, performance, and long life.
+              </p>
+            </div>
+
+            {/* Construction Card */}
+            <div style={{
+              background: '#fff',
+              borderRadius: '16px',
+              padding: '35px 30px',
+              boxShadow: '0 10px 30px rgba(0,0,0,0.05)',
+              border: '1px solid rgba(239, 68, 68, 0.1)',
+              position: 'relative',
+              overflow: 'hidden',
+              transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+            }}>
+              <div style={{
+                width: '60px',
+                height: '60px',
+                background: 'linear-gradient(135deg, #FEE2E2 0%, #FEF3C7 100%)',
+                borderRadius: '12px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                marginBottom: '25px'
+              }}>
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.25013C11.8996 1.7849 14.1003 2.02173 16.07 2.92" stroke="#EF4444" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M22 4L12 14.01L9 11.01" stroke="#EF4444" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+              <h3 style={{
+                fontSize: '1.5rem',
+                fontWeight: 700,
+                color: '#1e293b',
+                marginBottom: '15px'
+              }}>Construction</h3>
+              <p style={{
+                color: '#64748b',
+                lineHeight: '1.7',
+                margin: 0
+              }}>
+                Our experts handle the complete installation, including panel mounting, electrical connections, system integration, safety setup, testing and final commissioning. We offer both on-grid and off-grid options depending on your needs.
+              </p>
+            </div>
+          </div>
+
+          <div style={{
+            marginTop: '40px',
+            textAlign: 'center',
+            padding: '25px',
+            background: 'linear-gradient(90deg, #FEE2E2 0%, #FEF3C7 100%)',
+            borderRadius: '12px',
+            borderLeft: '4px solid #EF4444'
+          }}>
+            <p style={{
+              margin: 0,
+              fontSize: '1.1rem',
+              color: '#9A3412',
+              lineHeight: '1.7',
+              fontWeight: 500
+            }}>
+              With Arreion, you get a seamless solar experience backed by quality, transparency, and consistent support — ensuring your solar plant runs smoothly for years.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Additional Services Section (with imagery) */}
       <div
         style={{
@@ -735,8 +932,7 @@ function Solutions() {
                 overflow: 'hidden',
                 position: 'relative',
                 minHeight: isMobile ? '140px' : '180px',
-                backgroundImage:
-                  "url('https://images.unsplash.com/photo-1582719478250-cc578ecca486?auto=format&fit=crop&w=900&q=80')",
+                backgroundImage: `url(${require('../assets/images/windimages.jpg')})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 boxShadow: '0 16px 40px rgba(15,23,42,0.35)',
@@ -787,8 +983,7 @@ function Solutions() {
                 overflow: 'hidden',
                 position: 'relative',
                 minHeight: isMobile ? '140px' : '180px',
-                backgroundImage:
-                  "url('https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=80')",
+                backgroundImage: `url(${industrialImage})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 boxShadow: '0 16px 40px rgba(15,23,42,0.28)',
@@ -932,6 +1127,114 @@ function Solutions() {
           </div>
         </div>
       </div>
+       {/* Team Section */}
+        <div style={{ marginBottom: '60px' }}>
+          <h2 style={{
+            color: 'black',
+            marginBottom: '10px',
+            fontSize: '2.3rem',
+            textAlign: 'center'
+          }}>Client Testimonial</h2>
+          <p style={{
+            textAlign: 'center',
+            color: 'black',
+            marginBottom: '35px',
+            fontSize: '1rem'
+          }}>
+            Hear from our customers who trusted Arreion for their solar projects.
+          </p>
+
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+            gap: '30px',
+            marginTop: '20px'
+          }}>
+            {[
+              {
+                name: 'Sanjay Khuswaha',
+                location: 'Solar Park, Tamil Nadu',
+                quote:
+                  'We would like to thank the entire Arreion team for their excellent service. Our inquiries are always responded to promptly; the technical managers are thorough and knowledgeable; the follow-ups have always been courteous and pleasant.'
+              },
+              {
+                name: 'Santosh Khare',
+                location: 'Chhindwara, M.P.',
+                quote:
+                  'Consistently maintained the quality of work without compromising the timeline is why we decided to give you turnkey EPC for our solar PV plant. A team full of cutting edge talent.'
+              },
+              {
+                name: 'Atul Kumar',
+                location: 'Kanpur, U.P.',
+                quote:
+                  'We have been lucky to have found one of the finest solar companies in the country. Your concepts to commissioning services have enabled us to focus on our core business and simultaneously develop a second line of business under your expert guidance.'
+              },
+              {
+                name: 'Sushil Gupta',
+                location: 'Bikaner, Rajasthan',
+                quote:
+                  'Would like to thank you for the professionalism shown by your company all throughout the project. Arreion consistently went the extra mile to ensure that the project becomes operational at the earliest date.'
+              }
+            ].map((t, index) => (
+              <div
+                key={index}
+                style={{
+                  background: 'linear-gradient(145deg, #ffe4e1, #fff7f4)',
+                  borderRadius: '24px',
+                  boxShadow: '0 12px 28px rgba(248, 113, 113, 0.25)',
+                  padding: '26px 26px 30px',
+                  position: 'relative',
+                  overflow: 'hidden'
+                }}
+              >
+                <div
+                  style={{
+                    position: 'absolute',
+                    top: '-10px',
+                    left: '18px',
+                    fontSize: '50px',
+                    color: '#fbbf2440',
+                    fontWeight: 700
+                  }}
+                >
+                  “
+                </div>
+                <div style={{ marginTop: '20px' }}>
+                  <h3
+                    style={{
+                      margin: '0 0 4px',
+                      fontSize: '1.1rem',
+                      fontWeight: 700,
+                      color: '#7f1d1d'
+                    }}
+                  >
+                    {t.name}
+                  </h3>
+                  <div
+                    style={{
+                      marginBottom: '12px',
+                      fontSize: '0.9rem',
+                      color: '#9f1239'
+                    }}
+                  >
+                    {t.location}
+                  </div>
+                  <p
+                    style={{
+                      margin: 0,
+                      fontSize: '0.95rem',
+                      lineHeight: 1.6,
+                      color: '#7c2d12'
+                    }}
+                  >
+                    {t.quote}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
     </section>
   );
 }
