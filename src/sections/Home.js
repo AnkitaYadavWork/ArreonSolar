@@ -356,10 +356,10 @@ function Home() {
     const iv = setInterval(() => {
       t += 1;
       setCounts({
-        mwp: Math.min(30, +(t * 2).toFixed(1)),
+        mwp: Math.min(200, +(t * 10).toFixed(1)),
         sites: Math.min(200, t * 10),
-        co2: Math.min(72000000, t * 1800000),
-        units: Math.min(650000, t * 16000),
+        co2: Math.min(400000000, t * 18000000),
+        units: Math.min(350400000, t * 16000000),
       });
       if (t >= 500) clearInterval(iv);
     }, 40);
@@ -641,7 +641,7 @@ function Home() {
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   transition: 'all 0.3s ease'
-                }}>35+ <span style={{ fontSize: '18px' }}>MWp</span></div>
+                }}>200+ <span style={{ fontSize: '18px' }}>MWp</span></div>
               </div>
               
               <div 
@@ -1585,7 +1585,7 @@ function Home() {
                 lineHeight: '1.7',
                 fontSize: '15px'
               }}>
-                With over 10 years in the solar industry, we've successfully completed 200+ projects with a total installed capacity of 35+ MWp.
+                With over 10 years in the solar industry, we've successfully completed 200+ projects with a total installed capacity of 200+ MWp.
               </p>
               
             </div>

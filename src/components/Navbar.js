@@ -1,6 +1,7 @@
 import React, { useMemo, useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../assets/images/logo solar.jpg';
+//import logo from '../assets/images/logo solar.jpg';
+import logo from '../assets/images/arreion_logo.png';
 
 
 function Navbar() {
@@ -8,10 +9,10 @@ function Navbar() {
     () => [
       { to: '/', label: 'Home' },
       { to: '/about', label: 'About' },
-      { to: '/solutions', label: 'Services' },
-      { to: '/contact', label: 'Contact' },
-      { to: '/portfolio', label: 'Portfolio' },
       { to: '/pmkusum', label: 'PM KUSUM' },
+      { to: '/solutions', label: 'Services' },
+      { to: '/portfolio', label: 'Portfolio' },
+      { to: '/contact', label: 'Contact' },     
       
     ],
     []
@@ -134,8 +135,8 @@ function Navbar() {
                 src={logo} 
                 alt="SolarX Logo" 
                 style={{
-                  height: '30px',
-                  width: 'auto',
+                  height: '45px',
+                  width: '180px',
                   marginRight: '12px',
                   borderRadius: '8px',
                   boxShadow: '0 2px 12px rgba(0,0,0,0.1)',
@@ -148,13 +149,12 @@ function Navbar() {
                 fontSize: '0.7rem',
                 fontWeight: 600,
                 color: '#4b5563',
-                letterSpacing: '1.5px',
                 textTransform: 'uppercase',
                 position: 'relative',
                 display: 'inline-block',
                 transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
               }}>
-                Renewable Energy
+                Renew, Energize, Distribute
               </span>
             </div>
           </div>
