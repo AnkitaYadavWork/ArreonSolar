@@ -247,7 +247,7 @@ function Footer() {
               }}
             >
               <span >📞 Call Now</span>
-              <span>+91 98765 43210</span>
+              <span>0522-4338941</span>
             </a>
           </div>
           <div style={{

@@ -269,20 +269,20 @@ function Contact() {
                 <h4 style={{ margin: '0 0 5px', fontSize: '1rem', fontWeight: '600' }}>Call Us</h4>
                 <p style={{ margin: 0, opacity: 0.9 }}>
                   <a
-                    href="tel:+919876543210"
+                    href="tel:0522-4338941"
                     style={{ color: 'inherit', textDecoration: 'none' }}
                   >
-                    +91 98765 43210
+                    0522-4338941
                   </a>
                 </p>
-                <p style={{ margin: '5px 0 0', opacity: 0.9 }}>
+                {/* <p style={{ margin: '5px 0 0', opacity: 0.9 }}>
                   <a
-                    href="tel:+919876543211"
+                    href="tel:0522-4338941"
                     style={{ color: 'inherit', textDecoration: 'none' }}
                   >
-                    +91 98765 43211
+                    0522-4338941
                   </a>
-                </p>
+                </p> */}
               </div>
             </div>
 

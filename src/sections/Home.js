@@ -2070,7 +2070,7 @@ function Home() {
             display: 'flex',
             flexDirection: { xs: 'column', sm: 'row' },
             alignItems: 'center',
-            justifyContent: 'space-between',
+            justifyContent: 'space-around',
             flexWrap: 'wrap',
             gap: '16px'
           }}>
