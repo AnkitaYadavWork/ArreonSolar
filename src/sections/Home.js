@@ -1913,25 +1913,6 @@ function Home() {
           width: '100%' 
         }}>
           <div style={{
-            width: { xs: '100%', md: '300px' },
-            padding: '32px',
-            background: 'linear-gradient(135deg, #f9fafb, #ffffff)',
-            borderRight: { xs: 'none', md: '1px solid #e5e7eb' },
-            borderBottom: { xs: '1px solid #e5e7eb', md: 'none' },
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center'
-          }}>
-            <h2 style={{
-              fontSize: 'clamp(1.5rem, 4vw, 1.75rem)',
-              lineHeight: '1.2',
-              margin: 0,
-              textAlign: 'center'
-            }}>
-              <span style={{ fontWeight: 300, color: '#C9A961' }}>Module Partner</span><br />
-            </h2>
-          </div>
-          <div style={{
             flex: 1,
             padding: { xs: '16px', md: '24px 32px' },
             display: 'flex',
@@ -2046,31 +2027,12 @@ function Home() {
           width: '100%' 
         }}>
           <div style={{
-            width: { xs: '100%', md: '300px' },
-            padding: '32px',
-            background: 'linear-gradient(135deg, #f9fafb, #ffffff)',
-            borderRight: { xs: 'none', md: '1px solid #e5e7eb' },
-            borderBottom: { xs: '1px solid #e5e7eb', md: 'none' },
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center'
-          }}>
-            <h2 style={{
-              fontSize: 'clamp(1.5rem, 4vw, 1.75rem)',
-              lineHeight: '1.2',
-              margin: 0,
-              textAlign: 'center'
-            }}>
-              <span style={{ fontWeight: 300, color: '#C9A961' }}>Business Partner</span><br />
-            </h2>
-          </div>
-          <div style={{
             flex: 1,
             padding: { xs: '16px', md: '24px 32px' },
             display: 'flex',
             flexDirection: { xs: 'column', sm: 'row' },
             alignItems: 'center',
-            justifyContent: 'space-between',
+            justifyContent: 'center',
             flexWrap: 'wrap',
             gap: '16px'
           }}>
@@ -2203,25 +2165,6 @@ function Home() {
           alignItems: 'stretch', 
           width: '100%' 
         }}>
-          <div style={{
-            width: { xs: '100%', md: '300px' },
-            padding: '32px',
-            background: 'linear-gradient(135deg, #f9fafb, #ffffff)',
-            borderRight: { xs: 'none', md: '1px solid #e5e7eb' },
-            borderBottom: { xs: '1px solid #e5e7eb', md: 'none' },
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center'
-          }}>
-            <h2 style={{
-              fontSize: 'clamp(1.5rem, 4vw, 1.75rem)',
-              lineHeight: '1.2',
-              margin: 0,
-              textAlign: 'center'
-            }}>
-              <span style={{ fontWeight: 300, color: '#C9A961' }}>Empanelment</span><br />
-            </h2>
-          </div>
           <div style={{
             flex: 1,
             padding: { xs: '16px', md: '24px 32px' },
