@@ -105,7 +105,7 @@ function About() {
               { number: '10+', label: 'Years Experience' },
               { number: '200', label: 'Projects Completed' },
               { number: '98%', label: 'Customer Satisfaction' },
-              { number: '40+', label: 'States Served' }
+              { number: '20+', label: 'States Served' }
             ].map((stat, index) => (
               <div key={index} style={{
                 padding: '0 20px',
