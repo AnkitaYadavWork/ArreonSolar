@@ -1914,23 +1914,37 @@ function Home() {
         }}>
           <div style={{
             flex: 1,
-            padding: { xs: '16px', md: '24px 32px' },
+            padding: { xs: '16px 24px', md: '24px 48px' },
             display: 'flex',
-            flexDirection: { xs: 'column', sm: 'row' },
+            flexDirection: 'column',
             alignItems: 'center',
-            justifyContent: 'space-between',
-            flexWrap: 'wrap',
-            gap: '16px'
+            justifyContent: 'center',
+            maxWidth: '1400px',
+            margin: '0 auto',
+            width: '100%',
+            boxSizing: 'border-box'
           }}>
+            <div style={{
+              display: 'flex',
+              flexDirection: { xs: 'column', sm: 'row' },
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexWrap: 'wrap',
+              gap: { xs: '16px', sm: '24px' },
+              width: '100%',
+              maxWidth: '1200px',
+              margin: '0 auto'
+            }}>
             {/* Redington */}
             <div style={{ 
               display: 'flex', 
               alignItems: 'center', 
               gap: '12px',
-              minWidth: { xs: '100%', sm: '200px' },
+              minWidth: { xs: '100%', sm: '220px' },
               flex: { xs: '0 0 auto', sm: '1 1 0' },
-              justifyContent: { xs: 'flex-start', sm: 'center' },
-              padding: { xs: '12px 0', sm: '0' }
+              justifyContent: { xs: 'center', sm: 'flex-start' },
+              padding: { xs: '8px 0', sm: '8px 16px' },
+              boxSizing: 'border-box'
             }}>
               <div style={{
                 width: '40px',
@@ -1956,12 +1970,13 @@ function Home() {
             {/* GAUTAM SOLAR */}
             <div style={{ 
               textAlign: 'center',
-              minWidth: { xs: '100%', sm: '180px' },
+              minWidth: { xs: '100%', sm: '200px' },
               flex: { xs: '0 0 auto', sm: '1 1 0' },
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
-              padding: { xs: '12px 0', sm: '0' }
+              padding: { xs: '8px 0', sm: '8px 16px' },
+              boxSizing: 'border-box'
             }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
                 <div style={{
@@ -1987,9 +2002,10 @@ function Home() {
               padding: '12px 16px',
               borderRadius: '8px',
               backgroundColor: '#f8fafc',
-              minWidth: { xs: '100%', sm: '160px' },
+              minWidth: { xs: '100%', sm: '180px' },
               flex: { xs: '0 0 auto', sm: '1 1 0' },
-              boxSizing: 'border-box'
+              boxSizing: 'border-box',
+              margin: { xs: '8px 0', sm: '0' }
             }}>
               <div style={{ fontSize: 'clamp(1.25rem, 3vw, 1.5rem)', fontWeight: 'bold', color: '#2563eb', letterSpacing: '-0.025em' }}>EMMVEE</div>
             </div>
@@ -2000,12 +2016,14 @@ function Home() {
               padding: '12px 16px',
               borderRadius: '8px',
               backgroundColor: '#f8fafc',
-              minWidth: { xs: '100%', sm: '160px' },
+              minWidth: { xs: '100%', sm: '180px' },
               flex: { xs: '0 0 auto', sm: '1 1 0' },
-              boxSizing: 'border-box'
+              boxSizing: 'border-box',
+              margin: { xs: '8px 0', sm: '0' }
             }}>
               <div style={{ fontSize: 'clamp(1.25rem, 3vw, 1.5rem)', fontWeight: 'bold', color: '#1e40af' }}>GOLDI</div>
               <div style={{ fontSize: 'clamp(0.875rem, 2.5vw, 1rem)', fontWeight: 600, color: '#1e40af' }}>SOLAR</div>
+            </div>
             </div>
           </div>
         </div>
@@ -2016,7 +2034,7 @@ function Home() {
         backgroundColor: 'white',
         borderRadius: '24px',
         boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
-        border: '1px solid #f3f4f6',
+        border: '5px solid #f3f4f6',
         overflow: 'hidden',
         width: '100%'
       }}>
@@ -2062,7 +2080,7 @@ function Home() {
                   height: '40px',
                   background: '#1e40af',
                   color: '#fff',
-                  borderRadius: '6px',
+                  borderRadius: '10px',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',

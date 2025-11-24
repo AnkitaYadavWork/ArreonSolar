@@ -25,13 +25,8 @@ export default function Portfolio() {
   }, []);
 
   return (
-    <div
-      style={{
-        padding: '80px 0',
-        backgroundColor: '#fff8f6',
-      }}
-    >
-      <div
+    <div style={{ padding: '80px 0', backgroundColor: '#fff8f6' }}>
+      <div 
         className="container"
         style={{
           maxWidth: '1140px',
@@ -1037,6 +1032,112 @@ export default function Portfolio() {
               </div>
             ))}
           </div>
+        </div>
+  
+      {/* Map Section */}
+      <div style={{ marginTop: '60px', textAlign: 'center' }}>
+        <h2 style={{
+          fontSize: '32px',
+          fontWeight: 700,
+          color: '#333',
+          marginBottom: '20px',
+          textTransform: 'uppercase',
+          position: 'relative',
+          display: 'inline-block',
+          paddingBottom: '10px'
+        }}>
+          Our <span style={{ color: '#e53935' }}>Project Locations</span>
+          <span style={{
+            position: 'absolute',
+            bottom: 0,
+            left: '50%',
+            transform: 'translateX(-50%)',
+            width: '80px',
+            height: '3px',
+            backgroundColor: '#e53935',
+            borderRadius: '2px'
+          }}></span>
+        </h2>
+        <p style={{
+          color: '#666',
+          maxWidth: '700px',
+          margin: '0 auto 30px',
+          lineHeight: '1.6',
+          fontSize: '15px'
+        }}>
+          Explore our solar power projects across various states in India, contributing to a sustainable future with clean energy solutions.
+        </p>
+        
+        <div style={{
+          maxWidth: '900px',
+          margin: '0 auto',
+          padding: '20px',
+          backgroundColor: '#fff',
+          borderRadius: '12px',
+          boxShadow: '0 8px 30px rgba(0, 0, 0, 0.08)'
+        }}>
+          <img 
+            src={require('../assets/images/map.jpg')} 
+            alt="India Map showing project locations" 
+            style={{
+              width: '100%',
+              height: 'auto',
+              borderRadius: '8px',
+              border: '1px solid #eee',
+              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.05)'
+            }}
+          />
+          
+          <div style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+            gap: '15px',
+            marginTop: '25px',
+            padding: '15px 0'
+          }}>
+            {[
+              { state: 'Rajasthan', count: '12+ Projects' },
+              { state: 'Uttar Pradesh', count: '10+ Projects' },
+              { state: 'Karnataka', count: '4+ Projects' },
+              { state: 'Madhya Pradesh', count: '7+ Projects' },
+              { state: 'Maharashtra', count: '3+ Projects' },
+              { state: 'Tamil Nadu', count: '2+ Projects' },
+              { state: 'Haryana', count: '1+ Project' },
+              { state: 'Jharkhand', count: '1+ Project' },
+              { state: 'Odisha', count: '1+ Project' },
+              { state: 'Uttarakhand', count: '1+ Project' },
+              { state: 'Delhi NCR', count: '1+ Project' },
+            ].map((item, index) => (
+              <div key={index} style={{
+                backgroundColor: '#FFE4C4', // Light peach color
+                padding: '8px 18px',
+                borderRadius: '20px',
+                border: '1px solid #e0e0e0',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                transition: 'all 0.3s ease'
+              }}>
+                <span style={{
+                  display: 'inline-block',
+                  width: '10px',
+                  height: '10px',
+                  backgroundColor: '#e53935',
+                  borderRadius: '50%',
+                  flexShrink: 0
+                }}></span>
+                <span style={{
+                  fontSize: '14px',
+                  fontWeight: 500,
+                  color: '#333'
+                }}>
+                  {item.state}: <span style={{ color: '#e53935', fontWeight: 600 }}>{item.count}</span>
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
         </div>
       </div>
     </div>
