@@ -105,7 +105,7 @@ function About() {
               { number: '10+', label: 'Years Experience' },
               { number: '200', label: 'Projects Completed' },
               { number: '98%', label: 'Customer Satisfaction' },
-              { number: '20+', label: 'States Served' }
+              { number: '11+', label: 'States Served' }
             ].map((stat, index) => (
               <div key={index} style={{
                 padding: '0 20px',
@@ -190,7 +190,7 @@ function About() {
           </div>
 
           <p style={{ marginBottom: '20px' }}>
-           Backed by a strong team of domain experts, we develop, build, own, operate, and consult for utility-scale energy projects for C&I clients and Government PSUs. With 60+ projects across 20+ locations, a 300% YoY revenue growth, and a team of 80+ on-roll and off-roll professionals, we continue to strengthen India’s transition to clean energy.
+           Backed by a strong team of domain experts, we develop, build, own, operate, and consult for utility-scale energy projects for C&I clients and Government PSUs. With 200+ projects across 11+ states, a 300% YoY revenue growth, and a team of 80+ on-roll and off-roll professionals, we continue to strengthen India’s transition to clean energy.
           </p>
 
           <div style={{
