@@ -35,14 +35,14 @@ export default function Portfolio() {
         }}
       >
         <div
-          style={{
-            marginBottom: '40px',
-            textAlign: 'left',
-            borderLeft: '6px solid #e53935',
-            paddingLeft: '18px',
-          }}
+          // style={{
+          //   marginBottom: '40px',
+          //   textAlign: 'left',
+          //   borderLeft: '6px solid #e53935',
+          //   paddingLeft: '18px',
+          // }}
         >
-          <h2
+          {/* <h2
             style={{
               margin: 0,
               fontSize: '38px',
@@ -53,8 +53,8 @@ export default function Portfolio() {
             }}
           >
             Our <span style={{ color: 'black' }}>Portfolio</span>
-          </h2>
-          <p
+          </h2> */}
+          {/* <p
             style={{
               marginTop: '10px',
               maxWidth: '620px',
@@ -65,7 +65,111 @@ export default function Portfolio() {
           >
             A snapshot of some of our executed solar EPC projects across India, covering
             industrial, commercial and utility scale installations.
-          </p>
+          </p> */}
+        </div>
+        <div style={{ marginTop: '60px', textAlign: 'center' }}>
+        <h2 style={{
+          fontSize: '32px',
+          fontWeight: 700,
+          color: '#333',
+          marginBottom: '20px',
+          textTransform: 'uppercase',
+          position: 'relative',
+          display: 'inline-block',
+          paddingBottom: '10px'
+        }}>
+          Our <span style={{ color: '#e53935' }}>Project Locations</span>
+          <span style={{
+            position: 'absolute',
+            bottom: 0,
+            left: '50%',
+            transform: 'translateX(-50%)',
+            width: '80px',
+            height: '3px',
+            backgroundColor: '#e53935',
+            borderRadius: '2px'
+          }}></span>
+        </h2>
+        <p style={{
+          color: '#666',
+          maxWidth: '700px',
+          margin: '0 auto 30px',
+          lineHeight: '1.6',
+          fontSize: '15px'
+        }}>
+          Explore our solar power projects across various states in India, contributing to a sustainable future with clean energy solutions.
+        </p>
+        
+        <div style={{
+          maxWidth: '900px',
+          margin: '0 auto',
+          padding: '20px',
+          backgroundColor: '#fff',
+          borderRadius: '12px',
+          boxShadow: '0 8px 30px rgba(0, 0, 0, 0.08)'
+        }}>
+          <img 
+            src={require('../assets/images/map.jpg')} 
+            alt="India Map showing project locations" 
+            style={{
+              width: '100%',
+              height: 'auto',
+              borderRadius: '8px',
+              border: '1px solid #eee',
+              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.05)'
+            }}
+          />
+          
+          <div style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+            gap: '15px',
+            marginTop: '25px',
+            padding: '15px 0'
+          }}>
+            {[
+              { state: 'Rajasthan', count: '12+ Projects' },
+              { state: 'Uttar Pradesh', count: '10+ Projects' },
+              { state: 'Karnataka', count: '4+ Projects' },
+              { state: 'Madhya Pradesh', count: '7+ Projects' },
+              { state: 'Maharashtra', count: '3+ Projects' },
+              { state: 'Tamil Nadu', count: '2+ Projects' },
+              { state: 'Haryana', count: '1+ Project' },
+              { state: 'Jharkhand', count: '1+ Project' },
+              { state: 'Odisha', count: '1+ Project' },
+              { state: 'Uttarakhand', count: '1+ Project' },
+              { state: 'Delhi NCR', count: '1+ Project' },
+            ].map((item, index) => (
+              <div key={index} style={{
+                backgroundColor: '#FFE4C4', // Light peach color
+                padding: '8px 18px',
+                borderRadius: '20px',
+                border: '1px solid #e0e0e0',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                transition: 'all 0.3s ease'
+              }}>
+                <span style={{
+                  display: 'inline-block',
+                  width: '10px',
+                  height: '10px',
+                  backgroundColor: '#e53935',
+                  borderRadius: '50%',
+                  flexShrink: 0
+                }}></span>
+                <span style={{
+                  fontSize: '14px',
+                  fontWeight: 500,
+                  color: '#333'
+                }}>
+                  {item.state}: <span style={{ color: '#e53935', fontWeight: 600 }}>{item.count}</span>
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
         </div>
 
         <div
@@ -271,7 +375,7 @@ export default function Portfolio() {
                     no: 17,
                     client: 'Power Grid Corporation of India',
                     capacity: '265 KWp',
-                    location: 'Orrisa',
+                    location: 'Odisha',
                   },
                    {
                     no: 18,
@@ -574,212 +678,7 @@ export default function Portfolio() {
             boxShadow: '0 16px 38px rgba(0,0,0,0.06)',
           }}
         >
-          {/* <div
-            style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'baseline',
-              marginBottom: '18px',
-            }}
-          >
-            <h3
-              style={{
-                margin: 0,
-                fontSize: '22px',
-                fontWeight: 700,
-                letterSpacing: '0.04em',
-                color: '#1a4b82',
-              }}
-            >
-              EPC Project Highlights
-            </h3>
-            <span
-              style={{
-                fontSize: '12px',
-                textTransform: 'uppercase',
-                letterSpacing: '0.12em',
-                color: '#999999',
-              }}
-            >
-              Key Clients (17 - 28)
-            </span>
-          </div> */}
-
-          {/* <div
-            style={{
-              position: 'relative',
-              paddingLeft: '20px',
-            }}
-          >
-            <div
-              style={{
-                position: 'absolute',
-                left: '8px',
-                top: 0,
-                bottom: '18px',
-                width: '2px',
-                background:
-                  'linear-gradient(to bottom, rgba(139,195,74,0.6), rgba(255,241,188,0.3))',
-              }}
-            />
-
-            {[
-              {
-                no: 17,
-                client: 'Power Grid Corporation of India',
-                capacity: '265 KWp',
-                location: 'Various location in Orrisa',
-              },
-              {
-                no: 18,
-                client: 'Century Minechem Private Limited',
-                capacity: '380 KWp',
-                location: 'Bhilwara (Rajasthan)',
-              },
-              {
-                no: 19,
-                client: 'Aditya Birla Mines',
-                capacity: '357 KWp',
-                location: 'Bagru (Jharkhand)',
-              },
-              {
-                no: 20,
-                client: 'Olympus Glasses',
-                capacity: '350 KWp',
-                location: 'Sandila (UP)',
-              },
-              {
-                no: 21,
-                client: 'Ratan Housing & Development',
-                capacity: '250 KWp',
-                location: 'Kanpur (UP)',
-              },
-              {
-                no: 22,
-                client: 'Lulu Shopping Mall',
-                capacity: '200 KWp',
-                location: 'Lucknow (UP)',
-              },
-              {
-                no: 23,
-                client: 'Dental College',
-                capacity: '170 KWp',
-                location: 'Chennai (TN)',
-              },
-              {
-                no: 24,
-                client: 'Shree Bankey Bihari College',
-                capacity: '150 KWp',
-                location: 'Ghaziabad (UP)',
-              },
-              {
-                no: 25,
-                client: 'Mother Dairy',
-                capacity: '150 KWp',
-                location: 'Mumbai (Maharashtra)',
-              },
-              {
-                no: 26,
-                client: 'Shraddha Agro Food',
-                capacity: '90 KWp',
-                location: 'Prayagraj (UP)',
-              },
-              {
-                no: 27,
-                client: 'Cold Storage',
-                capacity: '80 KWp',
-                location: 'Delhi NCR',
-              },
-              {
-                no: 28,
-                client: 'Sai Cold Storage',
-                capacity: '20 KWp',
-                location: 'Bijapur',
-              },
-            ].map((row, index) => (
-              <div
-                key={row.no}
-                style={{
-                  position: 'relative',
-                  display: 'flex',
-                  gap: '14px',
-                  padding: '10px 16px',
-                  marginBottom: index === 11 ? 0 : '10px',
-                }}
-              >
-                <div
-                  style={{
-                    width: '16px',
-                    height: '16px',
-                    borderRadius: '999px',
-                    backgroundColor: '#ffffff',
-                    border: '3px solid #eb6767a6',
-                    boxShadow: '0 0 0 4px rgba(140,198,63,0.18)',
-                    marginTop: '6px',
-                    flexShrink: 0,
-                  }}
-                />
-                <div
-                  style={{
-                    flex: 1,
-                    background:
-                      'linear-gradient(90deg, #ffffff 0%, #f9fff3 60%, #fdf8e4 100%)',
-                    borderRadius: '10px',
-                    padding: '10px 14px',
-                    boxShadow: '0 10px 18px rgba(0,0,0,0.04)',
-                    border: '1px solid #eef3e0',
-                  }}
-                >
-                  <div
-                    style={{
-                      display: 'flex',
-                      justifyContent: 'space-between',
-                      gap: '10px',
-                      marginBottom: '4px',
-                    }}
-                  >
-                    <span
-                      style={{
-                        fontSize: '13px',
-                        fontWeight: 700,
-                        color: '#8c7a1a',
-                      }}
-                    >
-                      #{row.no}
-                    </span>
-                    <span
-                      style={{
-                        fontSize: '13px',
-                        fontWeight: 600,
-                        color: '#7b6a24',
-                        whiteSpace: 'nowrap',
-                      }}
-                    >
-                      {row.capacity}
-                    </span>
-                  </div>
-                  <div
-                    style={{
-                      fontSize: '15px',
-                      fontWeight: 600,
-                      color: '#333333',
-                      marginBottom: '2px',
-                    }}
-                  >
-                    {row.client}
-                  </div>
-                  <div
-                    style={{
-                      fontSize: '13px',
-                      color: '#666666',
-                    }}
-                  >
-                    {row.location}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div> */}
+         
         </div>
 
         {/* Project Images gallery */}
@@ -1032,112 +931,6 @@ export default function Portfolio() {
               </div>
             ))}
           </div>
-        </div>
-  
-      {/* Map Section */}
-      <div style={{ marginTop: '60px', textAlign: 'center' }}>
-        <h2 style={{
-          fontSize: '32px',
-          fontWeight: 700,
-          color: '#333',
-          marginBottom: '20px',
-          textTransform: 'uppercase',
-          position: 'relative',
-          display: 'inline-block',
-          paddingBottom: '10px'
-        }}>
-          Our <span style={{ color: '#e53935' }}>Project Locations</span>
-          <span style={{
-            position: 'absolute',
-            bottom: 0,
-            left: '50%',
-            transform: 'translateX(-50%)',
-            width: '80px',
-            height: '3px',
-            backgroundColor: '#e53935',
-            borderRadius: '2px'
-          }}></span>
-        </h2>
-        <p style={{
-          color: '#666',
-          maxWidth: '700px',
-          margin: '0 auto 30px',
-          lineHeight: '1.6',
-          fontSize: '15px'
-        }}>
-          Explore our solar power projects across various states in India, contributing to a sustainable future with clean energy solutions.
-        </p>
-        
-        <div style={{
-          maxWidth: '900px',
-          margin: '0 auto',
-          padding: '20px',
-          backgroundColor: '#fff',
-          borderRadius: '12px',
-          boxShadow: '0 8px 30px rgba(0, 0, 0, 0.08)'
-        }}>
-          <img 
-            src={require('../assets/images/map.jpg')} 
-            alt="India Map showing project locations" 
-            style={{
-              width: '100%',
-              height: 'auto',
-              borderRadius: '8px',
-              border: '1px solid #eee',
-              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.05)'
-            }}
-          />
-          
-          <div style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'center',
-            gap: '15px',
-            marginTop: '25px',
-            padding: '15px 0'
-          }}>
-            {[
-              { state: 'Rajasthan', count: '12+ Projects' },
-              { state: 'Uttar Pradesh', count: '10+ Projects' },
-              { state: 'Karnataka', count: '4+ Projects' },
-              { state: 'Madhya Pradesh', count: '7+ Projects' },
-              { state: 'Maharashtra', count: '3+ Projects' },
-              { state: 'Tamil Nadu', count: '2+ Projects' },
-              { state: 'Haryana', count: '1+ Project' },
-              { state: 'Jharkhand', count: '1+ Project' },
-              { state: 'Odisha', count: '1+ Project' },
-              { state: 'Uttarakhand', count: '1+ Project' },
-              { state: 'Delhi NCR', count: '1+ Project' },
-            ].map((item, index) => (
-              <div key={index} style={{
-                backgroundColor: '#FFE4C4', // Light peach color
-                padding: '8px 18px',
-                borderRadius: '20px',
-                border: '1px solid #e0e0e0',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '8px',
-                transition: 'all 0.3s ease'
-              }}>
-                <span style={{
-                  display: 'inline-block',
-                  width: '10px',
-                  height: '10px',
-                  backgroundColor: '#e53935',
-                  borderRadius: '50%',
-                  flexShrink: 0
-                }}></span>
-                <span style={{
-                  fontSize: '14px',
-                  fontWeight: 500,
-                  color: '#333'
-                }}>
-                  {item.state}: <span style={{ color: '#e53935', fontWeight: 600 }}>{item.count}</span>
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
         </div>
       </div>
     </div>

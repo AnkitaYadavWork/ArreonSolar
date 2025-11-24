@@ -218,7 +218,7 @@ We believe in clean energy, transparent execution, and long-term client partners
         </div>
 
  {/* Team Members Section */}
-          <section style={{
+          {/* <section style={{
         padding: '80px 0',
         background: '#f8fafc',
         position: 'relative',
@@ -338,7 +338,7 @@ We believe in clean energy, transparent execution, and long-term client partners
             </div>
           </div>
         </div>
-      </section>   
+      </section>    */}
 
       {/* Message from Management */}
       <section style={{

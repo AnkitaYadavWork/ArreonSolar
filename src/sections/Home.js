@@ -2105,7 +2105,7 @@ function Home() {
             </div>
             
             {/* oceanbig */}
-            <div style={{
+            {/* <div style={{
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
@@ -2163,7 +2163,7 @@ function Home() {
                 textAlign: 'center',
                 marginTop: '2px'
               }}>Lighting the way to young ads</div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
