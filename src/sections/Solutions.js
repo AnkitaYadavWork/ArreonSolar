@@ -6,7 +6,7 @@ import industrialImage from '../assets/images/industrialimages.jpg';
 import agricultureImage from '../assets/images/agricultureimages.jpg';
 
 function Solutions() {
-  const [activeTab, setActiveTab] = useState('residential');
+  const [activeTab, setActiveTab] = useState('commercial');
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const navigate = useNavigate();
   const containerStyle = { maxWidth: 1180, margin: '0 auto', padding: '0 24px' };
@@ -21,21 +21,6 @@ function Solutions() {
   }, []);
 
   const solutions = [
-    {
-      id: 'residential',
-      title: "Residential Solutions",
-      icon: <FiHome className="solution-icon" />,
-      highlight: "Power Your Home with Sunshine",
-      description: "Transform your home into an energy-efficient haven with our customized rooftop solar solutions. Enjoy up to 90% reduction in electricity bills while contributing to a greener planet.",
-      image: residentialImage,
-      features: [
-        { text: "3-10 kW systems", icon: <FiCheckCircle /> },
-        { text: "Smart energy monitoring", icon: <FiZap /> },
-        { text: "Subsidy assistance", icon: <FiTrendingUp /> },
-        { text: "25-year performance warranty", icon: <FiShield /> }
-      ],
-      cta: "Get Free Consultation"
-    },
     {
       id: 'commercial',
       title: "Commercial & Industrial",
@@ -65,7 +50,22 @@ function Solutions() {
         { text: "Up to 90% subsidy", icon: <FiShield /> }
       ],
       cta: "Know More About KUSUM"
-    }
+    },
+    //  {
+    //   id: 'residential',
+    //   title: "Residential Solutions",
+    //   icon: <FiHome className="solution-icon" />,
+    //   highlight: "Power Your Home with Sunshine",
+    //   description: "Transform your home into an energy-efficient haven with our customized rooftop solar solutions. Enjoy up to 90% reduction in electricity bills while contributing to a greener planet.",
+    //   image: residentialImage,
+    //   features: [
+    //     { text: "3-10 kW systems", icon: <FiCheckCircle /> },
+    //     { text: "Smart energy monitoring", icon: <FiZap /> },
+    //     { text: "Subsidy assistance", icon: <FiTrendingUp /> },
+    //     { text: "25-year performance warranty", icon: <FiShield /> }
+    //   ],
+    //   cta: "Get Free Consultation"
+    // }
   ];
 
   return (

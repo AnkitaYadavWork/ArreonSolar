@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 import { Sun, Zap, Droplets, IndianRupee } from "lucide-react";
 import pmkusumImage from "../assets/images/pmkusumimages.jpg";
+import SolarPanel1 from "../assets/images/SolarPanel1.jpg";
 
 export default function KusumPage() {
     const theme = 'light'
@@ -709,7 +710,7 @@ export default function KusumPage() {
               <div style={{ flex: '1 1 0%' }}>
                 <div style={{ backgroundColor: '#ffffff', padding: '1rem', borderRadius: '0.75rem', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)', overflow: 'hidden' }}>
                   <img 
-                    src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" 
+                    src={SolarPanel1} 
                     alt="Farmer in agricultural field with solar panels"
                     style={{ width: '100%', height: 'auto', borderRadius: '0.5rem', objectFit: 'cover' }}
                     onError={(e) => {
