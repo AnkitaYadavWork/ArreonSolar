@@ -144,7 +144,7 @@ function Navbar() {
                 }}
              />
             </div>
-            <div style={{ position: 'relative', display: 'inline-block', marginTop: '4px' }}>
+            <div style={{ position: 'relative', display: 'inline-block', marginTop: '4px','margin-left': '-10px' }}>
               <span style={{
                 fontSize: '0.7rem',
                 fontWeight: 600,

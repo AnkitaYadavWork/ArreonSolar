@@ -219,7 +219,7 @@ function Footer() {
               <span>→</span>
             </Link>
             <a 
-              href="tel:+919876543210"
+              href="tel:0522-4338941"
               style={{
                 background: 'rgba(255, 255, 255, 0.1)',
                 color: 'white',
@@ -246,8 +246,39 @@ function Footer() {
                 }
               }}
             >
-              <span >📞 Call Now</span>
+              <span >📞</span>
               <span>0522-4338941</span>
+            </a>
+            <a 
+              href="tel:+919506044178"
+              style={{
+                background: 'rgba(255, 255, 255, 0.1)',
+                color: 'white',
+                border: '1px solid rgba(255, 255, 255, 0.2)',
+                padding: '14px 32px',
+                borderRadius: '8px',
+                fontSize: '16px',
+                fontWeight: 600,
+                cursor: 'pointer',
+                transition: 'all 0.3s ease',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                textDecoration: 'none',
+                '&:hover': {
+                  background: 'rgba(255, 255, 255, 0.2)',
+                  transform: 'translateY(-2px)'
+                }
+              }}
+              css={{
+                '&:hover': {
+                  background: 'rgba(255, 255, 255, 0.2)',
+                  transform: 'translateY(-2px)'
+                }
+              }}
+            >
+              <span >📞</span>
+              <span>+91 9506044178</span>
             </a>
           </div>
           <div style={{

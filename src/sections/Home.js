@@ -506,7 +506,7 @@ function Home() {
               <span>•</span>
               <span>Industrial</span>
               <span>•</span>
-              <span>Residential</span>
+              <span>Utility Scale</span>
             </div>
             <h1 style={{ margin: 0, lineHeight: 1.08, fontSize: 'clamp(30px, 5.2vw, 52px)' }}>
               Switch to Smarter Solar
@@ -593,7 +593,7 @@ function Home() {
             </p>
             <div style={{ display:'flex', gap:14, flexWrap:'wrap', margin: '10px 0 16px' }}>
               <span style={{ padding:'10px 14px', borderRadius:999, background:'#eaf8f0', color:'#0a6b3e', fontSize:13 }}>✅ MNRE Compliant</span>
-              <span style={{ padding:'10px 14px', borderRadius:999, background:'#eaf0ff', color:'#1246a6', fontSize:13 }}>🔌 Net‑Metering Ready</span>
+              <span style={{ padding:'10px 14px', borderRadius:999, background:'#eaf0ff', color:'#1246a6', fontSize:13 }}>🔌 EPCM</span>
               <span style={{ padding:'10px 14px', borderRadius:999, background:'#fff5e9', color:'#9a5a00', fontSize:13 }}>🛡️ 25+ Yr Warranty</span>
               <span style={{ padding:'10px 14px', borderRadius:999, background:'#eef1f5', color:'#1f2937', fontSize:13 }}>🗺️ Pan‑India Execution</span>
             </div>
@@ -687,7 +687,7 @@ function Home() {
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   transition: 'all 0.3s ease'
-                }}>200+ <span style={{ fontSize: '18px' }}>Sites</span></div>
+                }}>100+ <span style={{ fontSize: '18px' }}>Sites</span></div>
               </div>
             </div>
           </div>
@@ -1244,7 +1244,7 @@ function Home() {
             {[
               {
                 icon: '🔆',
-                title: 'Rooftop Installations',
+                title: 'Rooftop & Ground Mount Installations',
                 desc: 'Residential & commercial rooftop systems with minimal disruption',
                 gradient: 'linear-gradient(135deg, #f0f9ff, #e0f2fe)'
               },
@@ -1256,19 +1256,19 @@ function Home() {
               },
               {
                 icon: '🛠️',
-                title: 'Design & Engineering',
+                title: 'EPCM',
                 desc: 'Yield‑first designs, stringing, shading and structural analysis',
                 gradient: 'linear-gradient(135deg, #eff6ff, #dbeafe)'
               },
               {
                 icon: '📈',
-                title: 'O&M & Monitoring',
+                title: 'Transmission',
                 desc: '24x7 monitoring, preventive maintenance and fast SLAs',
                 gradient: 'linear-gradient(135deg, #fdf2f8, #fce7f3)'
               },
               {
                 icon: '📝',
-                title: 'Net‑metering & Approvals',
+                title: 'Asset Management',
                 desc: 'DISCOM coordination, paperwork and commissioning support',
                 gradient: 'linear-gradient(135deg, #f0fdfa, #ccfbf1)'
               },
@@ -1790,9 +1790,9 @@ function Home() {
               {[
                 { icon: '⚡', text: 'Founded in 2015' },
                 { icon: '📈', text: 'Revenue growth 300% YoY' },
-                { icon: '💰', text: 'Turnover 65 Cr 2024-25' },
+                { icon: '😊', text: '98% Client Satisfaction' },
                 { icon: '📉', text: 'Gross Margin 28%' },
-                { icon: '📍', text: '60 Projects in 20 locations In India' },
+                { icon: '📍', text: '100+ Projects in 13 States Across India' },
                 { icon: '👥', text: 'Team of 35 On roll and 45 Off roll Technical & Other Staff' },
                 { icon: '👍', text: '56 Satisfied Govt. & Pvt. C & I Clients' },
                 { icon: '🌍', text: 'Pan India Presence' }
@@ -1873,489 +1873,477 @@ function Home() {
       </div>
 
       {/* Partners Section */}
-      <section style={{
-  minHeight: '100vh',
-  background: 'linear-gradient(to bottom, #f9fafb, #ffffff)',
-  padding: '64px 0',
-  fontFamily: 'sans-serif',
-  width: '100%',
-  overflow: 'hidden'
-}}>
-  <div style={{
-    maxWidth: '1400px',
-    margin: '0 auto',
-    padding: '0 32px'
-  }}>
-    <h1 style={{
-      fontSize: 'clamp(2rem, 5vw, 3rem)',
-      marginBottom: '60px',
-      fontWeight: 300,
-      textAlign: 'center'
-    }}>
-      <span style={{ color: '#374151' }}>Our </span>
-      <span style={{ color: '#7BA82E', fontWeight: 400 }}>Partners</span>
-    </h1>
+      {/* <section style={{
+        minHeight: '100vh',
+        background: 'linear-gradient(to bottom, #f9fafb, #ffffff)',
+        padding: '64px 0',
+        fontFamily: 'sans-serif',
+        width: '100%',
+        overflow: 'hidden'
+      }}>
+        <div style={{
+          maxWidth: '1400px',
+          margin: '0 auto',
+          padding: '0 32px'
+        }}>
+          <h1 style={{
+            fontSize: 'clamp(2rem, 5vw, 3rem)',
+            marginBottom: '60px',
+            fontWeight: 300,
+            textAlign: 'center'
+          }}>
+            <span style={{ color: '#374151' }}>Our </span>
+            <span style={{ color: '#7BA82E', fontWeight: 400 }}>Partners</span>
+          </h1>
 
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-      {/* Module Partner */}
-      <div style={{
-        backgroundColor: 'white',
-        borderRadius: '24px',
-        boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
-        border: '1px solid #f3f4f6',
-        overflow: 'hidden',
-        width: '100%'
-      }}>
-        <div style={{ 
-          display: 'flex', 
-          flexDirection: { xs: 'column', md: 'row' },
-          alignItems: 'stretch', 
-          width: '100%' 
-        }}>
-          <div style={{
-            flex: 1,
-            padding: { xs: '16px 24px', md: '24px 48px' },
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            maxWidth: '1400px',
-            margin: '0 auto',
-            width: '100%',
-            boxSizing: 'border-box'
-          }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+
             <div style={{
-              display: 'flex',
-              flexDirection: { xs: 'column', sm: 'row' },
-              alignItems: 'center',
-              justifyContent: 'center',
-              flexWrap: 'wrap',
-              gap: { xs: '16px', sm: '24px' },
-              width: '100%',
-              maxWidth: '1200px',
-              margin: '0 auto'
-            }}>
-            {/* Redington */}
-            <div style={{ 
-              display: 'flex', 
-              alignItems: 'center', 
-              gap: '12px',
-              minWidth: { xs: '100%', sm: '220px' },
-              flex: { xs: '0 0 auto', sm: '1 1 0' },
-              justifyContent: { xs: 'center', sm: 'flex-start' },
-              padding: { xs: '8px 0', sm: '8px 16px' },
-              boxSizing: 'border-box'
-            }}>
-              <div style={{
-                width: '40px',
-                height: '40px',
-                background: 'linear-gradient(135deg, #16a34a, #15803d)',
-                transform: 'rotate(45deg)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                flexShrink: 0
-              }}>
-                <div style={{ transform: 'rotate(-45deg)' }}>
-                  <div style={{ width: '24px', height: '2px', backgroundColor: 'white', marginBottom: '4px' }}></div>
-                  <div style={{ width: '24px', height: '2px', backgroundColor: 'white' }}></div>
-                </div>
-              </div>
-              <div>
-                <div style={{ fontSize: 'clamp(1rem, 3vw, 1.25rem)', fontWeight: 600, color: '#166534' }}>Redington</div>
-                <div style={{ fontSize: '0.7rem', color: '#6b7280', letterSpacing: '0.05em', textTransform: 'uppercase' }}>SEAMLESS PARTNERSHIPS</div>
-              </div>
-            </div>
-            
-            {/* GAUTAM SOLAR */}
-            <div style={{ 
-              textAlign: 'center',
-              minWidth: { xs: '100%', sm: '200px' },
-              flex: { xs: '0 0 auto', sm: '1 1 0' },
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              padding: { xs: '8px 0', sm: '8px 16px' },
-              boxSizing: 'border-box'
-            }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
-                <div style={{
-                  width: '28px',
-                  height: '28px',
-                  border: '2px solid #dc2626',
-                  borderRadius: '0.25rem',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  flexShrink: 0
-                }}>
-                  <span style={{ color: '#dc2626', fontWeight: 'bold', fontSize: '1rem' }}>G</span>
-                </div>
-                <span style={{ fontSize: 'clamp(1rem, 3vw, 1.25rem)', fontWeight: 'bold', color: '#dc2626' }}>GAUTAM</span>
-              </div>
-              <div style={{ fontSize: '0.875rem', fontWeight: 600, color: '#dc2626' }}>SOLAR</div>
-            </div>
-            
-            {/* EMMVEE */}
-            <div style={{ 
-              textAlign: 'center',
-              padding: '12px 16px',
-              borderRadius: '8px',
-              backgroundColor: '#f8fafc',
-              minWidth: { xs: '100%', sm: '180px' },
-              flex: { xs: '0 0 auto', sm: '1 1 0' },
-              boxSizing: 'border-box',
-              margin: { xs: '8px 0', sm: '0' }
-            }}>
-              <div style={{ fontSize: 'clamp(1.25rem, 3vw, 1.5rem)', fontWeight: 'bold', color: '#2563eb', letterSpacing: '-0.025em' }}>EMMVEE</div>
-            </div>
-            
-            {/* GOLDI SOLAR */}
-            <div style={{ 
-              textAlign: 'center',
-              padding: '12px 16px',
-              borderRadius: '8px',
-              backgroundColor: '#f8fafc',
-              minWidth: { xs: '100%', sm: '180px' },
-              flex: { xs: '0 0 auto', sm: '1 1 0' },
-              boxSizing: 'border-box',
-              margin: { xs: '8px 0', sm: '0' }
-            }}>
-              <div style={{ fontSize: 'clamp(1.25rem, 3vw, 1.5rem)', fontWeight: 'bold', color: '#1e40af' }}>GOLDI</div>
-              <div style={{ fontSize: 'clamp(0.875rem, 2.5vw, 1rem)', fontWeight: 600, color: '#1e40af' }}>SOLAR</div>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      {/* Business Partner */}
-      <div style={{
-        backgroundColor: 'white',
-        borderRadius: '24px',
-        boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
-        border: '5px solid #f3f4f6',
-        overflow: 'hidden',
-        width: '100%'
-      }}>
-        <div style={{ 
-          display: 'flex', 
-          flexDirection: { xs: 'column', md: 'row' },
-          alignItems: 'stretch', 
-          width: '100%' 
-        }}>
-          <div style={{
-            flex: 1,
-            padding: { xs: '16px', md: '24px 32px' },
-            display: 'flex',
-            flexDirection: { xs: 'column', sm: 'row' },
-            alignItems: 'center',
-            justifyContent: 'center',
-            flexWrap: 'wrap',
-            gap: '16px'
-          }}>
-            {/* V R SRIKARAYA VENTURE */}
-            <div style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '12px',
-              minWidth: { xs: '100%', sm: '280px' },
-              flex: { xs: '0 0 auto', sm: '1 1 0' },
-              justifyContent: { xs: 'flex-start', sm: 'center' },
-              padding: { xs: '12px 0', sm: '0' }
+              backgroundColor: 'white',
+              borderRadius: '24px',
+              boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+              border: '1px solid #f3f4f6',
+              overflow: 'hidden',
+              width: '100%'
             }}>
               <div style={{
                 display: 'flex',
-                alignItems: 'center',
-                gap: '8px'
+                flexDirection: { xs: 'column', md: 'row' },
+                alignItems: 'stretch',
+                width: '100%'
               }}>
-                <span style={{
-                  fontSize: 'clamp(1.5rem, 4vw, 2rem)',
-                  fontWeight: 'bold',
-                  color: '#1e40af',
-                  lineHeight: 1
-                }}>V</span>
                 <div style={{
-                  width: '40px',
-                  height: '40px',
-                  background: '#1e40af',
-                  color: '#fff',
-                  borderRadius: '10px',
+                  flex: 1,
+                  padding: { xs: '16px 24px', md: '24px 48px' },
                   display: 'flex',
+                  flexDirection: 'column',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  fontSize: '20px',
-                  fontWeight: 'bold',
-                  flexShrink: 0
-                }}>
-                  R
-                </div>
-              </div>
-              <div style={{
-                fontSize: 'clamp(0.875rem, 2.5vw, 1rem)',
-                fontWeight: 600,
-                color: '#1e40af',
-                textTransform: 'uppercase',
-                letterSpacing: '0.5px',
-                lineHeight: 1.3,
-                maxWidth: '300px'
-              }}>
-                V R SRIKARAYA VENTURE
-              </div>
-            </div>
-            
-            {/* oceanbig */}
-            {/* <div style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              gap: '4px',
-              minWidth: { xs: '100%', sm: '200px' },
-              flex: { xs: '0 0 auto', sm: '1 1 0' },
-              justifyContent: { xs: 'flex-start', sm: 'center' },
-              padding: { xs: '12px 0', sm: '0' }
-            }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '2px' }}>
-                <div style={{
-                  width: '40px',
-                  height: '40px',
-                  position: 'relative',
-                  flexShrink: 0
+                  maxWidth: '1400px',
+                  margin: '0 auto',
+                  width: '100%',
+                  boxSizing: 'border-box'
                 }}>
                   <div style={{
-                    position: 'absolute',
-                    top: '0',
-                    left: '0',
-                    right: '0',
-                    bottom: '0',
-                    border: '2px solid #ef4444',
-                    transform: 'rotate(45deg)'
-                  }}></div>
-                  <div style={{
-                    position: 'absolute',
-                    top: '6px',
-                    left: '6px',
-                    right: '6px',
-                    bottom: '6px',
-                    border: '2px solid #ef4444',
-                    transform: 'rotate(-45deg)'
-                  }}></div>
-                </div>
-                <div>
-                  <div style={{
-                    fontSize: 'clamp(1rem, 3vw, 1.25rem)',
-                    fontWeight: 'bold',
-                    color: '#ef4444',
-                    lineHeight: 1,
-                    letterSpacing: '-0.5px'
-                  }}>oceanbig</div>
-                  <div style={{
-                    fontSize: '10px',
-                    color: '#6b7280',
-                    lineHeight: 1.2
-                  }}>Technologies Ltd.</div>
-                </div>
-              </div>
-              <div style={{
-                fontSize: '10px',
-                fontStyle: 'italic',
-                color: '#ef4444',
-                textAlign: 'center',
-                marginTop: '2px'
-              }}>Lighting the way to young ads</div>
-            </div> */}
-          </div>
-        </div>
-      </div>
-      
-      {/* Empanelment */}
-      <div style={{
-        backgroundColor: 'white',
-        borderRadius: '24px',
-        boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
-        border: '1px solid #f3f4f6',
-        overflow: 'hidden',
-        width: '100%'
-      }}>
-        <div style={{ 
-          display: 'flex', 
-          flexDirection: { xs: 'column', md: 'row' },
-          alignItems: 'stretch', 
-          width: '100%' 
-        }}>
-          <div style={{
-            flex: 1,
-            padding: { xs: '16px', md: '24px 32px' },
-            display: 'flex',
-            flexDirection: { xs: 'column', sm: 'row' },
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            flexWrap: 'wrap',
-            gap: '16px'
-          }}>
-            {/* NWN */}
-            <div style={{
-              textAlign: 'center',
-              padding: '16px',
-              borderRadius: '12px',
-              backgroundColor: '#fff9ed',
-              minWidth: { xs: '100%', sm: '200px' },
-              flex: { xs: '0 0 auto', sm: '1 1 0' },
-              boxSizing: 'border-box'
-            }}>
-              <div style={{
-                fontSize: 'clamp(0.75rem, 2vw, 0.875rem)',
-                fontWeight: 500,
-                color: '#4b5563',
-                lineHeight: '1.4'
-              }}>
-                NWN (for Ground Mount,<br/>
-                <span style={{ color: '#C9A961' }}>Rooftop & Floating Solar</span>
-              </div>
-            </div>
-            
-            {/* UPNEDA */}
-            <div style={{
-              minWidth: { xs: '100%', sm: '200px' },
-              flex: { xs: '0 0 auto', sm: '1 1 0' },
-              display: 'flex',
-              justifyContent: 'center',
-              padding: { xs: '12px 0', sm: '0' }
-            }}>
-              <div style={{
-                border: '2px solid #059669',
-                borderRadius: '12px',
-                padding: '12px 16px',
-                textAlign: 'center',
-                width: '100%',
-                maxWidth: '280px',
-                boxSizing: 'border-box'
-              }}>
-                <div style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '8px',
-                  justifyContent: 'center',
-                  marginBottom: '6px'
-                }}>
-                  <div style={{
-                    width: '28px',
-                    height: '28px',
-                    border: '2px solid #059669',
-                    borderRadius: '4px',
                     display: 'flex',
+                    flexDirection: { xs: 'column', sm: 'row' },
                     alignItems: 'center',
                     justifyContent: 'center',
-                    flexShrink: 0
+                    flexWrap: 'wrap',
+                    gap: { xs: '16px', sm: '24px' },
+                    width: '100%',
+                    maxWidth: '1200px',
+                    margin: '0 auto'
                   }}>
-                    <span style={{
-                      color: '#059669',
-                      fontWeight: 'bold',
-                      fontSize: '16px',
-                      lineHeight: 1
-                    }}>U</span>
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '12px',
+                      minWidth: { xs: '100%', sm: '220px' },
+                      flex: { xs: '0 0 auto', sm: '1 1 0' },
+                      justifyContent: { xs: 'center', sm: 'flex-start' },
+                      padding: { xs: '8px 0', sm: '8px 16px' },
+                      boxSizing: 'border-box'
+                    }}>
+                      <div style={{
+                        width: '40px',
+                        height: '40px',
+                        background: 'linear-gradient(135deg, #16a34a, #15803d)',
+                        transform: 'rotate(45deg)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        flexShrink: 0
+                      }}>
+                        <div style={{ transform: 'rotate(-45deg)' }}>
+                          <div style={{ width: '24px', height: '2px', backgroundColor: 'white', marginBottom: '4px' }}></div>
+                          <div style={{ width: '24px', height: '2px', backgroundColor: 'white' }}></div>
+                        </div>
+                      </div>
+                      <div>
+                        <div style={{ fontSize: 'clamp(1rem, 3vw, 1.25rem)', fontWeight: 600, color: '#166534' }}>Redington</div>
+                        <div style={{ fontSize: '0.7rem', color: '#6b7280', letterSpacing: '0.05em', textTransform: 'uppercase' }}>SEAMLESS PARTNERSHIPS</div>
+                      </div>
+                    </div>
+                    <div style={{
+                      textAlign: 'center',
+                      minWidth: { xs: '100%', sm: '200px' },
+                      flex: { xs: '0 0 auto', sm: '1 1 0' },
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      padding: { xs: '8px 0', sm: '8px 16px' },
+                      boxSizing: 'border-box'
+                    }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+                        <div style={{
+                          width: '28px',
+                          height: '28px',
+                          border: '2px solid #dc2626',
+                          borderRadius: '0.25rem',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          flexShrink: 0
+                        }}>
+                          <span style={{ color: '#dc2626', fontWeight: 'bold', fontSize: '1rem' }}>G</span>
+                        </div>
+                        <span style={{ fontSize: 'clamp(1rem, 3vw, 1.25rem)', fontWeight: 'bold', color: '#dc2626' }}>GAUTAM</span>
+                      </div>
+                      <div style={{ fontSize: '0.875rem', fontWeight: 600, color: '#dc2626' }}>SOLAR</div>
+                    </div>
+
+                    <div style={{
+                      textAlign: 'center',
+                      padding: '12px 16px',
+                      borderRadius: '8px',
+                      backgroundColor: '#f8fafc',
+                      minWidth: { xs: '100%', sm: '180px' },
+                      flex: { xs: '0 0 auto', sm: '1 1 0' },
+                      boxSizing: 'border-box',
+                      margin: { xs: '8px 0', sm: '0' }
+                    }}>
+                      <div style={{ fontSize: 'clamp(1.25rem, 3vw, 1.5rem)', fontWeight: 'bold', color: '#2563eb', letterSpacing: '-0.025em' }}>EMMVEE</div>
+                    </div>
+
+                    <div style={{
+                      textAlign: 'center',
+                      padding: '12px 16px',
+                      borderRadius: '8px',
+                      backgroundColor: '#f8fafc',
+                      minWidth: { xs: '100%', sm: '180px' },
+                      flex: { xs: '0 0 auto', sm: '1 1 0' },
+                      boxSizing: 'border-box',
+                      margin: { xs: '8px 0', sm: '0' }
+                    }}>
+                      <div style={{ fontSize: 'clamp(1.25rem, 3vw, 1.5rem)', fontWeight: 'bold', color: '#1e40af' }}>GOLDI</div>
+                      <div style={{ fontSize: 'clamp(0.875rem, 2.5vw, 1rem)', fontWeight: 600, color: '#1e40af' }}>SOLAR</div>
+                    </div>
                   </div>
-                  <div style={{
-                    fontSize: 'clamp(1rem, 3vw, 1.125rem)',
-                    fontWeight: 'bold',
-                    color: '#059669',
-                    lineHeight: 1,
-                    whiteSpace: 'nowrap'
-                  }}>UPNEDA</div>
-                </div>
-                <div style={{
-                  fontSize: '11px',
-                  color: '#374151',
-                  lineHeight: '1.4',
-                  marginTop: '4px'
-                }}>
-                  <div>Pradesh New and Renewable</div>
-                  <div>Energy Development Agency</div>
                 </div>
               </div>
             </div>
-            
-            {/* NTPC */}
+
             <div style={{
-              minWidth: { xs: '100%', sm: '280px' },
-              flex: { xs: '0 0 auto', sm: '1 1 0' },
-              display: 'flex',
-              justifyContent: 'center',
-              padding: { xs: '12px 0', sm: '0' }
+              backgroundColor: 'white',
+              borderRadius: '24px',
+              boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+              border: '5px solid #f3f4f6',
+              overflow: 'hidden',
+              width: '100%'
             }}>
               <div style={{
-                border: '2px solid #2563eb',
-                borderRadius: '12px',
-                padding: '16px',
-                textAlign: 'left',
-                width: '100%',
-                maxWidth: '360px',
-                boxSizing: 'border-box'
+                display: 'flex',
+                flexDirection: { xs: 'column', md: 'row' },
+                alignItems: 'stretch',
+                width: '100%'
               }}>
                 <div style={{
+                  flex: 1,
+                  padding: { xs: '16px', md: '24px 32px' },
                   display: 'flex',
+                  flexDirection: { xs: 'column', sm: 'row' },
                   alignItems: 'center',
-                  gap: '10px',
-                  marginBottom: '8px',
+                  justifyContent: 'center',
                   flexWrap: 'wrap',
-                  justifyContent: 'center'
+                  gap: '16px'
                 }}>
                   <div style={{
-                    background: '#2563eb',
-                    color: '#fff',
-                    padding: '2px 8px',
-                    borderRadius: '4px',
-                    fontSize: '12px',
-                    fontWeight: 'bold',
-                    lineHeight: 1.2,
-                    whiteSpace: 'nowrap',
-                    flexShrink: 0
-                  }}>NTPC</div>
-                  <div style={{
-                    fontSize: '14px',
-                    fontWeight: 'bold',
-                    color: '#1e40af',
-                    lineHeight: 1.2,
-                    textAlign: 'left',
-                    width: '100%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '12px',
+                    minWidth: { xs: '100%', sm: '280px' },
+                    flex: { xs: '0 0 auto', sm: '1 1 0' },
+                    justifyContent: { xs: 'flex-start', sm: 'center' },
+                    padding: { xs: '12px 0', sm: '0' }
                   }}>
                     <div style={{
-                      fontSize: '10px',
-                      color: '#4b5563',
-                      lineHeight: '1.4',
-                      marginBottom: '2px'
-                    }}>एनटीपीसी विद्युत व्यापार निगम लिमिटेड</div>
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '8px'
+                    }}>
+                      <span style={{
+                        fontSize: 'clamp(1.5rem, 4vw, 2rem)',
+                        fontWeight: 'bold',
+                        color: '#1e40af',
+                        lineHeight: 1
+                      }}>V</span>
+                      <div style={{
+                        width: '40px',
+                        height: '40px',
+                        background: '#1e40af',
+                        color: '#fff',
+                        borderRadius: '10px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        fontSize: '20px',
+                        fontWeight: 'bold',
+                        flexShrink: 0
+                      }}>
+                        R
+                      </div>
+                    </div>
+                    <div style={{
+                      fontSize: 'clamp(0.875rem, 2.5vw, 1rem)',
+                      fontWeight: 600,
+                      color: '#1e40af',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.5px',
+                      lineHeight: 1.3,
+                      maxWidth: '300px'
+                    }}>
+                      V R SRIKARAYA VENTURE
+                    </div>
+                  </div>
+
+                  <div style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    gap: '4px',
+                    minWidth: { xs: '100%', sm: '200px' },
+                    flex: { xs: '0 0 auto', sm: '1 1 0' },
+                    justifyContent: { xs: 'flex-start', sm: 'center' },
+                    padding: { xs: '12px 0', sm: '0' }
+                  }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '2px' }}>
+                      <div style={{
+                        width: '40px',
+                        height: '40px',
+                        position: 'relative',
+                        flexShrink: 0
+                      }}>
+                        <div style={{
+                          position: 'absolute',
+                          top: '0',
+                          left: '0',
+                          right: '0',
+                          bottom: '0',
+                          border: '2px solid #ef4444',
+                          transform: 'rotate(45deg)'
+                        }}></div>
+                        <div style={{
+                          position: 'absolute',
+                          top: '6px',
+                          left: '6px',
+                          right: '6px',
+                          bottom: '6px',
+                          border: '2px solid #ef4444',
+                          transform: 'rotate(-45deg)'
+                        }}></div>
+                      </div>
+                      <div>
+                        <div style={{
+                          fontSize: 'clamp(1rem, 3vw, 1.25rem)',
+                          fontWeight: 'bold',
+                          color: '#ef4444',
+                          lineHeight: 1,
+                          letterSpacing: '-0.5px'
+                        }}>oceanbig</div>
+                        <div style={{
+                          fontSize: '10px',
+                          color: '#6b7280',
+                          lineHeight: 1.2
+                        }}>Technologies Ltd.</div>
+                      </div>
+                    </div>
                     <div style={{
                       fontSize: '10px',
-                      color: '#4b5563',
-                      lineHeight: '1.4',
-                      marginBottom: '4px'
-                    }}>(एनटीपीसी की पूर्ण स्वामित्व वाली सहायक कंपनी)</div>
+                      fontStyle: 'italic',
+                      color: '#ef4444',
+                      textAlign: 'center',
+                      marginTop: '2px'
+                    }}>Lighting the way to young ads</div>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <div style={{
+              backgroundColor: 'white',
+              borderRadius: '24px',
+              boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+              border: '1px solid #f3f4f6',
+              overflow: 'hidden',
+              width: '100%'
+            }}>
+              <div style={{
+                display: 'flex',
+                flexDirection: { xs: 'column', md: 'row' },
+                alignItems: 'stretch',
+                width: '100%'
+              }}>
                 <div style={{
-                  fontSize: '11px',
-                  color: '#1f2937',
-                  fontWeight: 600,
-                  lineHeight: '1.4',
-                  marginBottom: '2px',
-                  textAlign: 'center'
-                }}>NTPC Vidyut Vyapar Nigam Ltd</div>
-                <div style={{
-                  fontSize: '10px',
-                  color: '#6b7280',
-                  lineHeight: '1.4',
-                  textAlign: 'center'
-                }}>(A wholly owned subsidiary of NTPC)</div>
+                  flex: 1,
+                  padding: { xs: '16px', md: '24px 32px' },
+                  display: 'flex',
+                  flexDirection: { xs: 'column', sm: 'row' },
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  flexWrap: 'wrap',
+                  gap: '16px'
+                }}>
+                  <div style={{
+                    textAlign: 'center',
+                    padding: '16px',
+                    borderRadius: '12px',
+                    backgroundColor: '#fff9ed',
+                    minWidth: { xs: '100%', sm: '200px' },
+                    flex: { xs: '0 0 auto', sm: '1 1 0' },
+                    boxSizing: 'border-box'
+                  }}>
+                    <div style={{
+                      fontSize: 'clamp(0.75rem, 2vw, 0.875rem)',
+                      fontWeight: 500,
+                      color: '#4b5563',
+                      lineHeight: '1.4'
+                    }}>
+                      NWN (for Ground Mount,<br />
+                      <span style={{ color: '#C9A961' }}>Rooftop & Floating Solar</span>
+                    </div>
+                  </div>
+
+                  <div style={{
+                    minWidth: { xs: '100%', sm: '200px' },
+                    flex: { xs: '0 0 auto', sm: '1 1 0' },
+                    display: 'flex',
+                    justifyContent: 'center',
+                    padding: { xs: '12px 0', sm: '0' }
+                  }}>
+                    <div style={{
+                      border: '2px solid #059669',
+                      borderRadius: '12px',
+                      padding: '12px 16px',
+                      textAlign: 'center',
+                      width: '100%',
+                      maxWidth: '280px',
+                      boxSizing: 'border-box'
+                    }}>
+                      <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '8px',
+                        justifyContent: 'center',
+                        marginBottom: '6px'
+                      }}>
+                        <div style={{
+                          width: '28px',
+                          height: '28px',
+                          border: '2px solid #059669',
+                          borderRadius: '4px',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          flexShrink: 0
+                        }}>
+                          <span style={{
+                            color: '#059669',
+                            fontWeight: 'bold',
+                            fontSize: '16px',
+                            lineHeight: 1
+                          }}>U</span>
+                        </div>
+                        <div style={{
+                          fontSize: 'clamp(1rem, 3vw, 1.125rem)',
+                          fontWeight: 'bold',
+                          color: '#059669',
+                          lineHeight: 1,
+                          whiteSpace: 'nowrap'
+                        }}>UPNEDA</div>
+                      </div>
+                      <div style={{
+                        fontSize: '11px',
+                        color: '#374151',
+                        lineHeight: '1.4',
+                        marginTop: '4px'
+                      }}>
+                        <div>Pradesh New and Renewable</div>
+                        <div>Energy Development Agency</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div style={{
+                    minWidth: { xs: '100%', sm: '280px' },
+                    flex: { xs: '0 0 auto', sm: '1 1 0' },
+                    display: 'flex',
+                    justifyContent: 'center',
+                    padding: { xs: '12px 0', sm: '0' }
+                  }}>
+                    <div style={{
+                      border: '2px solid #2563eb',
+                      borderRadius: '12px',
+                      padding: '16px',
+                      textAlign: 'left',
+                      width: '100%',
+                      maxWidth: '360px',
+                      boxSizing: 'border-box'
+                    }}>
+                      <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '10px',
+                        marginBottom: '8px',
+                        flexWrap: 'wrap',
+                        justifyContent: 'center'
+                      }}>
+                        <div style={{
+                          background: '#2563eb',
+                          color: '#fff',
+                          padding: '2px 8px',
+                          borderRadius: '4px',
+                          fontSize: '12px',
+                          fontWeight: 'bold',
+                          lineHeight: 1.2,
+                          whiteSpace: 'nowrap',
+                          flexShrink: 0
+                        }}>NTPC</div>
+                        <div style={{
+                          fontSize: '14px',
+                          fontWeight: 'bold',
+                          color: '#1e40af',
+                          lineHeight: 1.2,
+                          textAlign: 'left',
+                          width: '100%',
+                        }}>
+                          <div style={{
+                            fontSize: '10px',
+                            color: '#4b5563',
+                            lineHeight: '1.4',
+                            marginBottom: '2px'
+                          }}>एनटीपीसी विद्युत व्यापार निगम लिमिटेड</div>
+                          <div style={{
+                            fontSize: '10px',
+                            color: '#4b5563',
+                            lineHeight: '1.4',
+                            marginBottom: '4px'
+                          }}>(एनटीपीसी की पूर्ण स्वामित्व वाली सहायक कंपनी)</div>
+                        </div>
+                      </div>
+                      <div style={{
+                        fontSize: '11px',
+                        color: '#1f2937',
+                        fontWeight: 600,
+                        lineHeight: '1.4',
+                        marginBottom: '2px',
+                        textAlign: 'center'
+                      }}>NTPC Vidyut Vyapar Nigam Ltd</div>
+                      <div style={{
+                        fontSize: '10px',
+                        color: '#6b7280',
+                        lineHeight: '1.4',
+                        textAlign: 'center'
+                      }}>(A wholly owned subsidiary of NTPC)</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-      
+      </section> */}
+
       {/* 2. Solar Calculator Section */}
       <section style={{
   padding: 'clamp(40px, 8vw, 80px) 0',

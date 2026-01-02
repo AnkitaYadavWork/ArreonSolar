@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { Sun, Zap, Droplets, IndianRupee } from "lucide-react";
+import { Sun, Droplets, IndianRupee } from "lucide-react";
 import pmkusumImage from "../assets/images/pmkusumimages.jpg";
 import SolarPanel1 from "../assets/images/SolarPanel1.jpg";
 
@@ -632,7 +632,7 @@ export default function KusumPage() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                           </svg>
                         </div>
-                        <span>Individual farmers with cultivable land</span>
+                        <span>Any individual with cultivable land</span>
                       </li>
                       <li style={{ display: 'flex', alignItems: 'flex-start' }}>
                         <div style={{
@@ -795,7 +795,7 @@ export default function KusumPage() {
         </div>
 
         {/* Documents Required Section */}
-        <div style={{ padding: '4rem 0', backgroundColor: '#fff7ed' }}>
+        {/* <div style={{ padding: '4rem 0', backgroundColor: '#fff7ed' }}>
           <div style={{
             maxWidth: '80rem',
             margin: '0 auto',
@@ -878,11 +878,7 @@ export default function KusumPage() {
               </div>
             </div>
           </div>
-        </div>
-
-      
-
-
+        </div> */}
       </main>
       
     </div>

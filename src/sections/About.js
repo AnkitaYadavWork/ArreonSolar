@@ -5,6 +5,16 @@ function About() {
   const solutionsRef = useRef(null);
   const location = useLocation();
   const containerStyle = { maxWidth: 1180, margin: '0 auto', padding: '0 24px' };
+   const [isMobile, setIsMobile] = React.useState(false);
+    React.useEffect(() => {
+       const handleResize = () => {
+         setIsMobile(window.innerWidth <= 768);
+       };
+   
+       handleResize();
+       window.addEventListener('resize', handleResize);
+       return () => window.removeEventListener('resize', handleResize);
+     }, []);
 
   useEffect(() => {
     // Check if we should scroll to solutions
@@ -103,9 +113,9 @@ function About() {
           }}>
             {[
               { number: '10+', label: 'Years Experience' },
-              { number: '200', label: 'Projects Completed' },
+              { number: '100', label: 'Projects Completed' },
               { number: '98%', label: 'Customer Satisfaction' },
-              { number: '11+', label: 'States Served' }
+              { number: '13', label: 'States Served' }
             ].map((stat, index) => (
               <div key={index} style={{
                 padding: '0 20px',
@@ -484,6 +494,178 @@ We believe in clean energy, transparent execution, and long-term client partners
           </div>
         </div>
       </section>
+
+       {/* Project Philosophy section */}
+        <div
+          style={{
+            marginTop: '80px',
+            padding: isMobile ? '24px 18px' : '32px 28px',
+            borderRadius: '12px',
+            backgroundColor: '#fff4ea',
+            boxShadow: '0 18px 40px rgba(0,0,0,0.06)',
+          }}
+        >
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: isMobile ? 'column' : 'row',
+              gap: isMobile ? '28px' : '48px',
+              alignItems: isMobile ? 'stretch' : 'flex-start',
+            }}
+          >
+            {/* Left text block */}
+            <div style={{ flex: isMobile ? '1' : '0 0 40%' }}>
+              <h3
+                style={{
+                  margin: 0,
+                  marginBottom: '18px',
+                  fontSize: isMobile ? '24px' : '30px',
+                  fontWeight: 700,
+                  letterSpacing: '0.04em',
+                  color: '#1a4b82',
+                }}
+              >
+                Project <span style={{ color: '#8cc63f' }}>Philosophy</span>
+              </h3>
+
+              <div style={{ marginBottom: '26px' }}>
+                <h4
+                  style={{
+                    margin: 0,
+                    marginBottom: '10px',
+                    fontSize: '17px',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.08em',
+                    color: '#7c7c7c',
+                  }}
+                >
+                  Pre-Engineering
+                </h4>
+                <ul
+                  style={{
+                    margin: 0,
+                    paddingLeft: '20px',
+                    color: '#4f4f4f',
+                    fontSize: '15px',
+                    lineHeight: 1.8,
+                  }}
+                >
+                  <li>PVSyst reports</li>
+                  <li>GA layout with the help of Google Earth</li>
+                  <li>Cable calculation</li>
+                  <li>Vendor identification</li>
+                  <li>Tentative BOQ preparation</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4
+                  style={{
+                    margin: 0,
+                    marginBottom: '10px',
+                    fontSize: '17px',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.08em',
+                    color: '#7c7c7c',
+                  }}
+                >
+                  Optimized Design & Engineering
+                </h4>
+                <ul
+                  style={{
+                    margin: 0,
+                    paddingLeft: '20px',
+                    color: '#4f4f4f',
+                    fontSize: '15px',
+                    lineHeight: 1.8,
+                  }}
+                >
+                  <li>MDL preparation</li>
+                  <li>Vendor finalisation</li>
+                  <li>Different engineering document preparation</li>
+                  <li>Optimized BOQ</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Right flow block */}
+            <div
+              style={{
+                flex: '1',
+                paddingTop: isMobile ? '0' : '8px',
+              }}
+            >
+              <div
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: isMobile
+                    ? 'repeat(2, minmax(0, 1fr))'
+                    : 'repeat(3, minmax(0, 1fr))',
+                  rowGap: isMobile ? '14px' : '22px',
+                  columnGap: isMobile ? '14px' : '26px',
+                }}
+              >
+                {[
+                  'Award of Work',
+                  'Client Approval',
+                  'Commissioning',
+                  'Site Analysis',
+                  'Procurement',
+                  'Plant Handover',
+                  'Optimized Design & Engineering',
+                  'Construction',
+                  'Training',
+                ].map((label) => (
+                  <div
+                    key={label}
+                    style={{
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                      padding: '12px 16px',
+                      borderRadius: '999px',
+                      backgroundColor: '#ffffff',
+                      boxShadow:
+                        '0 14px 26px rgba(0,0,0,0.12), 0 0 0 1px rgba(255,255,255,0.7)',
+                      color: '#7b6a24',
+                      fontSize: '15px',
+                      fontWeight: 600,
+                      textAlign: 'center',
+                      minHeight: '46px',
+                    }}
+                  >
+                    {label}
+                  </div>
+                ))}
+              </div>
+
+              <div
+                style={{
+                  marginTop: isMobile ? '24px' : '34px',
+                  display: 'flex',
+                  justifyContent: 'center',
+                }}
+              >
+                <div
+                  style={{
+                    padding: isMobile ? '8px 18px' : '10px 26px',
+                    borderRadius: '999px',
+                    backgroundColor: '#e5c96b',
+                    boxShadow: '0 12px 20px rgba(0,0,0,0.18)',
+                    color: '#7b6a24',
+                    fontSize: '14px',
+                    fontWeight: 600,
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.08em',
+                    textAlign: 'center',
+                  }}
+                >
+                  Post Construction Services
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
       {/* Our Services */}
         <div ref={solutionsRef} id="solutions" style={{

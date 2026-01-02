@@ -372,7 +372,7 @@ function Solutions() {
       </div>
       
       {/* Comprehensive Benefits Section */}
-      <div style={{
+      {/* <div style={{
         marginTop: isMobile ? '40px' : '80px',
         padding: isMobile ? '40px 15px' : '80px 20px',
         background: '#ffffff',
@@ -526,7 +526,7 @@ function Solutions() {
             ))}
           </div>
 
-          {/* Solar Power Generating System strip */}
+         
           <div
             style={{
               marginTop: isMobile ? '50px' : '70px',
@@ -545,7 +545,7 @@ function Solutions() {
                 gap: isMobile ? '20px' : '26px'
               }}
             >
-              {/* Header band */}
+             
               <div
                 style={{
                   background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
@@ -578,7 +578,7 @@ function Solutions() {
                 <span>Solar Power Generating System</span>
               </div>
 
-              {/* Connection type cards */}
+              
               <div
                 style={{
                   display: 'grid',
@@ -660,7 +660,7 @@ function Solutions() {
           </div>
 
         </div>
-      </div>
+      </div> */}
 
       {/* Solar EPC Section */}
       <div style={{ 
@@ -1152,25 +1152,25 @@ function Solutions() {
           }}>
             {[
               {
-                name: 'Sanjay Khuswaha',
+                name: 'Dheeraj Singh',  
                 location: 'Solar Park, Tamil Nadu',
                 quote:
                   'We would like to thank the entire Arreion team for their excellent service. Our inquiries are always responded to promptly; the technical managers are thorough and knowledgeable; the follow-ups have always been courteous and pleasant.'
               },
               {
-                name: 'Santosh Khare',
+                name: 'Aman Sharma',
                 location: 'Chhindwara, M.P.',
                 quote:
                   'Consistently maintained the quality of work without compromising the timeline is why we decided to give you turnkey EPC for our solar PV plant. A team full of cutting edge talent.'
               },
               {
-                name: 'Atul Kumar',
+                name: 'Monoj Kumar',
                 location: 'Kanpur, U.P.',
                 quote:
                   'We have been lucky to have found one of the finest solar companies in the country. Your concepts to commissioning services have enabled us to focus on our core business and simultaneously develop a second line of business under your expert guidance.'
               },
               {
-                name: 'Sushil Gupta',
+                name: 'Akshay Patel',
                 location: 'Bikaner, Rajasthan',
                 quote:
                   'Would like to thank you for the professionalism shown by your company all throughout the project. Arreion consistently went the extra mile to ensure that the project becomes operational at the earliest date.'

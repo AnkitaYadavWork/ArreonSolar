@@ -28,7 +28,7 @@ function Contact() {
     setStatus(null);
 
     try {
-      const res = await fetch('http://localhost:5000/send-feedback', {
+      const res = await fetch('https://arreion.com/api/send-feedback', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
