@@ -109,7 +109,7 @@ export default function Portfolio() {
           boxShadow: '0 8px 30px rgba(0, 0, 0, 0.08)'
         }}>
           <img 
-            src={require('../assets/images/map1.jpeg')} 
+            src={require('../assets/images/map_update.png')} 
             alt="India Map showing project locations" 
             style={{
               width: '100%',
