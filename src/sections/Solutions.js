@@ -92,8 +92,8 @@ function Solutions() {
         }}>
           <span style={{
             display: 'inline-block',
-            background: '#ffe4e6',
-            color: '#be123c',
+            background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
+            color: 'white',
             padding: '6px 16px',
             borderRadius: '20px',
             fontSize: isMobile ? '0.8rem' : '0.9rem',
@@ -720,7 +720,7 @@ function Solutions() {
               <div style={{
                 width: '60px',
                 height: '60px',
-                background: 'linear-gradient(135deg, #FEE2E2 0%, #FEF3C7 100%)',
+                background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
                 borderRadius: '12px',
                 display: 'flex',
                 alignItems: 'center',
@@ -728,15 +728,15 @@ function Solutions() {
                 marginBottom: '25px'
               }}>
                 <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" fill="#EF4444"/>
-                  <path d="M12 2V4" stroke="#EF4444" strokeWidth="2" strokeLinecap="round"/>
-                  <path d="M12 20V22" stroke="#EF4444" strokeWidth="2" strokeLinecap="round"/>
-                  <path d="M4.92999 4.92999L6.33999 6.33999" stroke="#EF4444" strokeWidth="2" strokeLinecap="round"/>
-                  <path d="M17.66 17.66L19.07 19.07" stroke="#EF4444" strokeWidth="2" strokeLinecap="round"/>
-                  <path d="M2 12H4" stroke="#EF4444" strokeWidth="2" strokeLinecap="round"/>
-                  <path d="M20 12H22" stroke="#EF4444" strokeWidth="2" strokeLinecap="round"/>
-                  <path d="M6.33999 17.66L4.92999 19.07" stroke="#EF4444" strokeWidth="2" strokeLinecap="round"/>
-                  <path d="M19.07 4.92999L17.66 6.33999" stroke="#EF4444" strokeWidth="2" strokeLinecap="round"/>
+                  <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" fill="white"/>
+                  <path d="M12 2V4" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+                  <path d="M12 20V22" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+                  <path d="M4.92999 4.92999L6.33999 6.33999" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+                  <path d="M17.66 17.66L19.07 19.07" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+                  <path d="M2 12H4" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+                  <path d="M20 12H22" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+                  <path d="M6.33999 17.66L4.92999 19.07" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+                  <path d="M19.07 4.92999L17.66 6.33999" stroke="white" strokeWidth="2" strokeLinecap="round"/>
                 </svg>
               </div>
               <h3 style={{
@@ -768,7 +768,7 @@ function Solutions() {
               <div style={{
                 width: '60px',
                 height: '60px',
-                background: 'linear-gradient(135deg, #FEE2E2 0%, #FEF3C7 100%)',
+                background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
                 borderRadius: '12px',
                 display: 'flex',
                 alignItems: 'center',
@@ -776,8 +776,8 @@ function Solutions() {
                 marginBottom: '25px'
               }}>
                 <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20 7H4C2.89543 7 2 7.89543 2 9V19C2 20.1046 2.89543 21 4 21H20C21.1046 21 22 20.1046 22 19V9C22 7.89543 21.1046 7 20 7Z" stroke="#EF4444" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M16 21V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V21" stroke="#EF4444" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M20 7H4C2.89543 7 2 7.89543 2 9V19C2 20.1046 2.89543 21 4 21H20C21.1046 21 22 20.1046 22 19V9C22 7.89543 21.1046 7 20 7Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M16 21V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V21" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
               <h3 style={{
@@ -809,7 +809,7 @@ function Solutions() {
               <div style={{
                 width: '60px',
                 height: '60px',
-                background: 'linear-gradient(135deg, #FEE2E2 0%, #FEF3C7 100%)',
+                background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
                 borderRadius: '12px',
                 display: 'flex',
                 alignItems: 'center',
@@ -817,8 +817,8 @@ function Solutions() {
                 marginBottom: '25px'
               }}>
                 <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.25013C11.8996 1.7849 14.1003 2.02173 16.07 2.92" stroke="#EF4444" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M22 4L12 14.01L9 11.01" stroke="#EF4444" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.25013C11.8996 1.7849 14.1003 2.02173 16.07 2.92" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M22 4L12 14.01L9 11.01" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
               <h3 style={{
@@ -841,14 +841,14 @@ function Solutions() {
             marginTop: '40px',
             textAlign: 'center',
             padding: '25px',
-            background: 'linear-gradient(90deg, #FEE2E2 0%, #FEF3C7 100%)',
+            background: 'linear-gradient(135deg, rgb(254, 202, 202), rgb(249, 115, 115))',
             borderRadius: '12px',
             borderLeft: '4px solid #EF4444'
           }}>
             <p style={{
               margin: 0,
               fontSize: '1.1rem',
-              color: '#9A3412',
+              color: '#0c0300ff',
               lineHeight: '1.7',
               fontWeight: 500
             }}>
@@ -885,8 +885,8 @@ function Solutions() {
                 display: 'inline-block',
                 padding: '6px 18px',
                 borderRadius: 999,
-                background: '#fee2e2',
-                color: '#b91c1c',
+                background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
+                color: 'white',
                 fontSize: '0.85rem',
                 fontWeight: 600,
                 letterSpacing: '0.06em',

@@ -1585,7 +1585,7 @@ function Home() {
                 lineHeight: '1.7',
                 fontSize: '15px'
               }}>
-                With over 10 years in the solar industry, we've successfully completed 200+ projects with a total installed capacity of 200+ MWp.
+                With over 10 years in the solar industry, we've successfully completed 100+ projects with a total installed capacity of 200+ MWp.
               </p>
               
             </div>
