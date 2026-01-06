@@ -526,10 +526,10 @@ export default function Portfolio() {
               fontSize: '32px',
               fontWeight: 700,
               letterSpacing: '0.04em',
-              color: '#1a4b82',
+              color: '#f58971ff',
             }}
           >
-            Project <span style={{ color: '#8cc63f' }}>Images</span>
+            Project <span style={{ color: '#f42516ff' }}>Images</span>
           </h2>
 
           <div
@@ -612,10 +612,10 @@ export default function Portfolio() {
                 fontSize: '26px',
                 fontWeight: 700,
                 letterSpacing: '0.04em',
-                color: '#1a4b82',
+                color: '#f58971ff',
               }}
             >
-              Kusum <span style={{ color: '#8cc63f' }}>Project Portfolio</span>
+              Kusum <span style={{ color: '#f42516ff' }}>Project Portfolio</span>
             </h2>
             <span
               style={{
@@ -705,7 +705,7 @@ export default function Portfolio() {
                     style={{
                       fontSize: '22px',
                       fontWeight: 600,
-                      color: '#7b6a24',
+                      color: '#ec280eff',
                       marginTop: '4px',
                     }}
                   >
@@ -728,7 +728,7 @@ export default function Portfolio() {
                       display: 'flex',
                       justifyContent: 'space-between',
                       padding: '8px 14px',
-                      backgroundColor: '#b59a3a',
+                       background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
                       color: '#ffffff',
                       fontSize: '12px',
                       fontWeight: 600,

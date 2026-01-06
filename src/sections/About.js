@@ -85,7 +85,9 @@ function About() {
             position: 'relative',
             textShadow: '0 2px 4px rgba(0,0,0,0.05)'
           }}>
-            Empowering India's Future with <span style={{ color: '#f04343ff' }}>Clean Energy</span>
+            Empowering India's Future with <span style={{  background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent' }}>Clean Energy</span>
           </h1>
 
           <p style={{
@@ -173,7 +175,7 @@ function About() {
               borderRadius: '10px',
               borderLeft: '4px solid #e13939ff'
             }}>
-              <h3 style={{ margin: '0 0 10px 0', color: '#e29f9fff' }}>Our Mission</h3>
+              <h3 style={{ margin: '0 0 10px 0', color: 'white', background: 'linear-gradient(90deg,#ff6b6b,#e53935)' }}>Our Mission</h3>
               <p style={{ margin: 0 }}>Our mission is to prioritize client satisfaction
                 by delivering tailored renewable energy
                 solutions that are reliable, efficient, and cost-
@@ -190,7 +192,7 @@ function About() {
               borderRadius: '10px',
               borderLeft: '4px solid #e13939ff'
             }}>
-              <h3 style={{ margin: '0 0 10px 0', color: '#e29f9fff' }}>Our Vision</h3>
+              <h3 style={{ margin: '0 0 10px 0', color: 'white', background: 'linear-gradient(90deg,#ff6b6b,#e53935)' }}>Our Vision</h3>
               <p style={{ margin: 0 }}>Our vision is to become the trusted partner
                 for sustainable energy solutions, relentlessly
                 committed to exceeding client expectations
@@ -213,7 +215,7 @@ function About() {
             <p style={{
               margin: '0',
               fontStyle: 'italic',
-              color: '#1e40af',
+              color: '#f41919ff',
               fontSize: '1.1rem',
               lineHeight: '1.6'
             }}>
@@ -429,7 +431,7 @@ We believe in clean energy, transparent execution, and long-term client partners
                 </p>
 
                 <div style={{
-                  background: 'linear-gradient(90deg, #FEE2E2 0%, #FEF3C7 100%)',
+                  background: 'linear-gradient(135deg, rgb(254, 202, 202), rgb(249, 115, 115))',
                   borderRadius: '12px',
                   padding: '25px 30px',
                   margin: '30px 0',
@@ -438,7 +440,7 @@ We believe in clean energy, transparent execution, and long-term client partners
                   <p style={{
                     fontSize: '18px',
                     fontStyle: 'italic',
-                    color: '#9A3412',
+                    color: '#0c0300ff',
                     margin: 0,
                     lineHeight: 1.7
                   }}>
@@ -501,7 +503,8 @@ We believe in clean energy, transparent execution, and long-term client partners
             marginTop: '80px',
             padding: isMobile ? '24px 18px' : '32px 28px',
             borderRadius: '12px',
-            backgroundColor: '#fff4ea',
+            background: '#fff9f8',
+            backgroundImage: 'radial-gradient(circle at 10% 20%, rgba(255, 200, 200, 0.1) 0%, rgba(255, 255, 255, 0) 40%), radial-gradient(circle at 90% 80%, rgba(255, 150, 150, 0.1) 0%, rgba(255, 255, 255, 0) 40%)',
             boxShadow: '0 18px 40px rgba(0,0,0,0.06)',
           }}
         >
@@ -522,10 +525,10 @@ We believe in clean energy, transparent execution, and long-term client partners
                   fontSize: isMobile ? '24px' : '30px',
                   fontWeight: 700,
                   letterSpacing: '0.04em',
-                  color: '#1a4b82',
+                  color: '#f58971ff',
                 }}
               >
-                Project <span style={{ color: '#8cc63f' }}>Philosophy</span>
+                Project <span style={{ color: '#f42516ff' }}>Philosophy</span>
               </h3>
 
               <div style={{ marginBottom: '26px' }}>
@@ -624,10 +627,10 @@ We believe in clean energy, transparent execution, and long-term client partners
                       alignItems: 'center',
                       padding: '12px 16px',
                       borderRadius: '999px',
-                      backgroundColor: '#ffffff',
+                      background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
                       boxShadow:
                         '0 14px 26px rgba(0,0,0,0.12), 0 0 0 1px rgba(255,255,255,0.7)',
-                      color: '#7b6a24',
+                      color: 'white',
                       fontSize: '15px',
                       fontWeight: 600,
                       textAlign: 'center',
@@ -650,9 +653,9 @@ We believe in clean energy, transparent execution, and long-term client partners
                   style={{
                     padding: isMobile ? '8px 18px' : '10px 26px',
                     borderRadius: '999px',
-                    backgroundColor: '#e5c96b',
+                    background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
                     boxShadow: '0 12px 20px rgba(0,0,0,0.18)',
-                    color: '#7b6a24',
+                    color: 'white',
                     fontSize: '14px',
                     fontWeight: 600,
                     textTransform: 'uppercase',

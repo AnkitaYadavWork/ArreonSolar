@@ -582,7 +582,7 @@ function Home() {
           <div style={{ position:'absolute', top:-80, right:-60, width:240, height:240, borderRadius:'50%', background:'radial-gradient(closest-side, rgba(14,165,233,0.08), rgba(14,165,233,0))' }} />
           <div style={{ position:'absolute', bottom:-100, left:-70, width:280, height:280, borderRadius:'50%', background:'radial-gradient(closest-side, rgba(34,197,94,0.08), rgba(34,197,94,0))' }} />
           <div style={{ ...containerStyle, position:'relative' }}>
-            <div style={{ display:'inline-flex', gap:8, padding:'6px 10px', background:'#e9f3ff', color:'#1e40af', borderRadius:999, fontSize:12, marginBottom:10 }}>
+            <div style={{ display:'inline-flex', gap:8, padding:'6px 10px', background: 'linear-gradient(90deg,#ff6b6b,#e53935)', color:'rgb(255, 255, 255)', borderRadius:999, fontSize:12, marginBottom:10 }}>
               <span>Who we are</span>
             </div>
             <h2 style={{ margin: 0, fontSize: 'clamp(28px, 4.8vw, 46px)' }}>About Our Solar Mission</h2>
@@ -592,10 +592,10 @@ function Home() {
               savings and long‑term value for homes, industries and institutions.
             </p>
             <div style={{ display:'flex', gap:14, flexWrap:'wrap', margin: '10px 0 16px' }}>
-              <span style={{ padding:'10px 14px', borderRadius:999, background:'#eaf8f0', color:'#0a6b3e', fontSize:13 }}>✅ MNRE Compliant</span>
-              <span style={{ padding:'10px 14px', borderRadius:999, background:'#eaf0ff', color:'#1246a6', fontSize:13 }}>🔌 EPCM</span>
-              <span style={{ padding:'10px 14px', borderRadius:999, background:'#fff5e9', color:'#9a5a00', fontSize:13 }}>🛡️ 25+ Yr Warranty</span>
-              <span style={{ padding:'10px 14px', borderRadius:999, background:'#eef1f5', color:'#1f2937', fontSize:13 }}>🗺️ Pan‑India Execution</span>
+              <span style={{ padding:'10px 14px', borderRadius:999, background: 'linear-gradient(90deg,#ff6b6b,#e53935)', color:'rgb(255, 255, 255)', fontSize:13 }}>✅ MNRE Compliant</span>
+              <span style={{ padding:'10px 14px', borderRadius:999,  background: 'linear-gradient(90deg,#ff6b6b,#e53935)', color:'rgb(255, 255, 255)', fontSize:13 }}>🔌 EPCM</span>
+              <span style={{ padding:'10px 14px', borderRadius:999,  background: 'linear-gradient(90deg,#ff6b6b,#e53935)', color:'rgb(255, 255, 255)', fontSize:13 }}>🛡️ 25+ Yr Warranty</span>
+              <span style={{ padding:'10px 14px', borderRadius:999,  background: 'linear-gradient(90deg,#ff6b6b,#e53935)', color:'rgb(255, 255, 255)', fontSize:13 }}>🗺️ Pan‑India Execution</span>
             </div>
             <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(180px, 1fr))', gap:12, margin:'10px 0 16px' }}>
               <div 
@@ -720,7 +720,7 @@ function Home() {
         </section>
       </div>
 
-      <div className="process-tabs full-bleed">
+      {/* <div className="process-tabs full-bleed">
         <section style={{ padding: '56px 0 68px', background: '#fff' }}>
           <div style={{ ...containerStyle }}>
             <h2 style={{ textAlign:'center', margin:0, fontSize:'clamp(24px,4.2vw,38px)' }}>Our Process</h2>
@@ -808,7 +808,7 @@ function Home() {
               >
                 <div style={{ position:'absolute', inset:0, background:'radial-gradient(600px 220px at 12% 14%, rgba(14,165,233,0.10), transparent), radial-gradient(600px 220px at 88% 86%, rgba(34,197,94,0.10), transparent)' }} />
                 <div style={{ position:'absolute', right:-40, top:-40, width:160, height:160, borderRadius:'50%', background:'radial-gradient(closest-side, rgba(250,204,21,0.06), rgba(250,204,21,0))' }} />
-                {/* Viz toggle */}
+               
                 <div style={{ position:'absolute', top:10, left:10, display:'flex', gap:6 }}>
                   {['line','bars'].map(v => (
                     <button key={v} onClick={()=>setVizType(v)} style={{ fontSize:11, padding:'6px 8px', borderRadius:999, border: vizType===v?'1px solid #0ea5e9':'1px solid #e6eef5', background: vizType===v?'#ffffffcc':'#ffffffa8' }}>{v.toUpperCase()}</button>
@@ -866,7 +866,7 @@ function Home() {
             </div>
           </div>
         </section>
-      </div>
+      </div> */}
 
       <div className="impact-counters full-bleed" style={{ width:'100vw', marginLeft:'calc(50% - 50vw)', marginRight:'calc(50% - 50vw)', background:'linear-gradient(90deg,#f8fbff,#f3fcf7)' }}>
         <section style={{ padding: '28px 0 32px' }}>
@@ -896,7 +896,7 @@ function Home() {
         </section>
       </div>
 
-      <div className="mission-values full-bleed">
+      {/* <div className="mission-values full-bleed">
         <section style={{ padding: '56px 0 64px', background: '#fff', position: 'relative', overflow: 'hidden' }}>
           <style>{`
             @keyframes fadeUp { from { opacity: 0; transform: translateY(10px);} to { opacity: 1; transform: translateY(0);} }
@@ -920,21 +920,21 @@ function Home() {
             .dna-card .icon-wrap{transition:transform 0.3s ease;}
             .dna-card.active .icon-wrap{transform:scale(1.15);}
             .dna-card:not(.active):hover{transform:translateY(-4px); box-shadow:0 12px 24px rgba(0,0,0,0.1);}
-            /* Special styling for Client Focus */
+            
             .dna-card.client-card{background:linear-gradient(180deg,#f0fbf8,#ffffff); border:1px solid rgba(10,107,62,0.06);} 
             .dna-card.client-card:before{background: conic-gradient(from 180deg, rgba(14,165,233,0.12), rgba(34,197,94,0.12));}
             .dna-card.client-card .icon-wrap{width:48px; height:48px; border-radius:12px; background:linear-gradient(135deg,#ecfdf5,#dcfce7); box-shadow:0 6px 18px rgba(16,185,129,0.06)}
             .recommend-badge{display:inline-block;padding:6px 10px;border-radius:999px;background:linear-gradient(90deg,#10b981,#06b6d4);color:#fff;font-weight:700;font-size:12px;margin-left:8px}
             .client-cta{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;background:linear-gradient(90deg,#06b6d4,#10b981);color:#fff;border:none;font-weight:700;margin-top:12px;cursor:pointer}
             .client-cta:active{transform:translateY(1px)}
-            /* Values list: centered, responsive pill badges */
+          
             .values-scroll{display:flex; justify-content:center;}
             .values-wrap{display:flex; gap:12px; padding:12px; justify-content:center; align-items:center; flex-wrap:wrap; max-width:960px; margin:0 auto;}
             .value-pill{scroll-snap-align:start; white-space:nowrap; padding:10px 16px; border-radius:999px; border:1px solid #e6eef5; background:linear-gradient(180deg,#ffffff,#f8fafc); font-size:14px; font-weight:600; box-shadow:0 2px 6px rgba(2,6,23,0.04); transition:all 0.2s ease; cursor:default; user-select:none;}
             .value-pill:hover{transform:none; box-shadow:0 2px 6px rgba(2,6,23,0.08); background:linear-gradient(180deg,#f9f9f9,#f0f0f0);}
             .value-pill.active{background:linear-gradient(180deg,#fff5f5,#ffe5e5); border:1px solid #ffcccc; color:#d32f2f; transform:none; box-shadow:0 2px 6px rgba(255,0,0,0.08);}
 
-            /* DNA explorer styles */
+           
             .dna-explorer{display:flex;gap:18px;align-items:flex-start}
             .dna-list{flex:0 0 280px}
             .dna-list-item{border:none;text-align:left}
@@ -970,7 +970,7 @@ function Home() {
               </div>
             </div>
 
-            {/* Two-column explorer: left list, right detail */}
+           
             <div className="dna-explorer" data-reveal style={{ marginTop: 12 }}>
               <div className="dna-list" style={{ padding: 8 }}>
                 {dnaItems.map((v, idx) => (
@@ -1119,7 +1119,7 @@ function Home() {
             </div>
           </div>
         </section>
-      </div>
+      </div> */}
 
       <div className="wave-divider full-bleed" aria-hidden="true">
         <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style={{ display:'block', width:'100%', height:60 }}>
@@ -1245,38 +1245,38 @@ function Home() {
               {
                 icon: '🔆',
                 title: 'Rooftop & Ground Mount Installations',
-                desc: 'Residential & commercial rooftop systems with minimal disruption',
-                gradient: 'linear-gradient(135deg, #f0f9ff, #e0f2fe)'
+                desc: 'Rooftop & ground mount installations systems with minimal disruption',
+                gradient: 'linear-gradient(90deg,#ff6b6b,#e53935)'
               },
               {
                 icon: '🏭',
                 title: 'Commercial & Industrial',
                 desc: 'Captive power, high‑capacity installs and load structuring',
-                gradient: 'linear-gradient(135deg, #f0fdf4, #dcfce7)'
+                gradient: 'linear-gradient(90deg,#ff6b6b,#e53935)'
               },
               {
                 icon: '🛠️',
                 title: 'EPCM',
                 desc: 'Yield‑first designs, stringing, shading and structural analysis',
-                gradient: 'linear-gradient(135deg, #eff6ff, #dbeafe)'
+                gradient: 'linear-gradient(90deg,#ff6b6b,#e53935)'
               },
               {
                 icon: '📈',
                 title: 'Transmission',
                 desc: '24x7 monitoring, preventive maintenance and fast SLAs',
-                gradient: 'linear-gradient(135deg, #fdf2f8, #fce7f3)'
+                gradient: 'linear-gradient(90deg,#ff6b6b,#e53935)'
               },
               {
                 icon: '📝',
                 title: 'Asset Management',
                 desc: 'DISCOM coordination, paperwork and commissioning support',
-                gradient: 'linear-gradient(135deg, #f0fdfa, #ccfbf1)'
+                gradient: 'linear-gradient(90deg,#ff6b6b,#e53935)'
               },
               {
                 icon: '💰',
                 title: 'Financing & ROI',
                 desc: 'CAPEX/OPEX options and payback modelling for clear decisions',
-                gradient: 'linear-gradient(135deg, #f5f3ff, #ede9fe)'
+                gradient: 'linear-gradient(90deg,#ff6b6b,#e53935)'
               }
             ].map((item, index) => (
               <div 
@@ -1490,12 +1490,12 @@ function Home() {
               lineHeight: '1.2',
               maxWidth: '800px'
             }}>
-              Leading the Solar Revolution with <span style={{ background: 'linear-gradient(90deg, #0ea5e9, #22c55e)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Innovation</span>
+              Leading the Solar Revolution with <span style={{ background: 'linear-gradient(90deg, #ff6b6b, #e53935)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Innovation</span>
             </h2>
             <div style={{
               width: '80px',
               height: '4px',
-              background: 'linear-gradient(90deg, #0ea5e9, #22c55e)',
+              background: 'linear-gradient(90deg, #ff6b6b, #e53935)',
               margin: '16px 0',
               borderRadius: '2px'
             }}></div>
@@ -1536,7 +1536,7 @@ function Home() {
                 left: 0,
                 right: 0,
                 height: '4px',
-                background: 'linear-gradient(90deg, #0ea5e9, #22c55e)',
+                background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
                 transition: 'all 0.3s ease'
               },
               ':hover': {
@@ -1548,7 +1548,7 @@ function Home() {
                 width: '70px',
                 height: '70px',
                 borderRadius: '18px',
-                background: 'linear-gradient(135deg, #e0f2fe, #bae6fd)',
+                background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -1573,7 +1573,7 @@ function Home() {
                   left: 0,
                   width: '40px',
                   height: '3px',
-                  background: 'linear-gradient(90deg, #0ea5e9, #22c55e)',
+                  background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
                   borderRadius: '2px'
                 }
               }}>
@@ -1609,7 +1609,7 @@ function Home() {
                 left: 0,
                 right: 0,
                 height: '4px',
-                background: 'linear-gradient(90deg, #22c55e, #84cc16)',
+                background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
                 transition: 'all 0.3s ease'
               },
               ':hover': {
@@ -1620,7 +1620,7 @@ function Home() {
                 position: 'absolute',
                 top: '20px',
                 right: '20px',
-                background: 'rgba(255,255,255,0.1)',
+                background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
                 color: 'white',
                 fontSize: '12px',
                 fontWeight: 600,
@@ -1634,7 +1634,7 @@ function Home() {
                 width: '70px',
                 height: '70px',
                 borderRadius: '18px',
-                background: 'linear-gradient(135deg, #22c55e, #16a34a)',
+                background: 'linear-gradient(135deg, #ff6b6b, #e53935)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -1659,7 +1659,7 @@ function Home() {
                   left: 0,
                   width: '40px',
                   height: '3px',
-                  background: 'linear-gradient(90deg, #22c55e, #84cc16)',
+                  background: 'linear-gradient(90deg, #ff6b6b, #e53935)',
                   borderRadius: '2px'
                 }
               }}>
@@ -1706,7 +1706,7 @@ function Home() {
                 width: '70px',
                 height: '70px',
                 borderRadius: '18px',
-                background: 'linear-gradient(135deg, #dcfce7, #bbf7d0)',
+                background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -1752,7 +1752,8 @@ function Home() {
           {/* Key Facts Section */}
           <div style={{
             minHeight: 'auto',
-            background: 'linear-gradient(to bottom, #fff8f3, #ffe4e1)',
+            background: '#fff9f8',
+            backgroundImage: 'radial-gradient(circle at 10% 20%, rgba(255, 200, 200, 0.1) 0%, rgba(255, 255, 255, 0) 40%), radial-gradient(circle at 90% 80%, rgba(255, 150, 150, 0.1) 0%, rgba(255, 255, 255, 0) 40%)',
             padding: '60px 40px',
             display: 'flex',
             flexDirection: 'column',
@@ -1767,7 +1768,8 @@ function Home() {
               background: 'linear-gradient(135deg, #ffb3b3, #ffd4a3)',
               padding: '8px 20px',
               borderRadius: '30px',
-              color: '#8b4513',
+              background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
+              color: 'white',
               fontSize: '18px',
               fontWeight: '600',
               boxShadow: '0 3px 10px rgba(255, 107, 107, 0.2)',
@@ -2383,7 +2385,7 @@ function Home() {
         textAlign: { xs: 'center', lg: 'left' }
       }}>
         Calculate Your Solar <span style={{
-          background: 'linear-gradient(90deg, #22c55e, #84cc16)',
+          background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent'
         }}>Savings</span>
@@ -2526,7 +2528,7 @@ function Home() {
           width: '36px',
           height: '36px',
           borderRadius: '50%',
-          background: 'rgba(34, 197, 94, 0.2)',
+          background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
           marginRight: '12px',
           flexShrink: 0
         }}>

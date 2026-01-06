@@ -71,8 +71,8 @@ function Contact() {
       <div style={{ textAlign: 'center', marginBottom: '50px' }}>
         <span style={{
           display: 'inline-block',
-          background: '#e4684f52',
-          color: '#a10303ff',
+          background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
+          color: 'white',
           padding: '6px 16px',
           borderRadius: '20px',
           fontSize: '0.9rem',
@@ -334,7 +334,7 @@ const inputStyle = {
   width: '100%',
   padding: '14px 16px',
   borderRadius: '8px',
-  border: '1px solid #e2e8f0',
+  border: '1px solid #ee2011ff',
   fontSize: '1rem',
   transition: 'all 0.3s ease',
   ':focus': {
@@ -343,7 +343,7 @@ const inputStyle = {
     boxShadow: '0 0 0 3px rgba(14, 165, 233, 0.2)'
   },
   '::placeholder': {
-    color: '#94a3b8'
+    color: '#f53009ff'
   }
 };
 

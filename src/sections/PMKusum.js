@@ -87,8 +87,8 @@ export default function KusumPage() {
                 </p>
                 <div style={{
                   transition: 'background-color 0.2s, color 0.2s',
-                  backgroundColor: theme === 'dark' ? '#fb923c' : '#fdba74',
-                  color: theme === 'dark' ? '#111827' : '#7f1d1d',
+                  background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
+                  color: 'white',
                   fontWeight: 'bold',
                   fontSize: '1.125rem',
                   padding: '0.75rem 1.5rem',
@@ -167,7 +167,7 @@ export default function KusumPage() {
                   <div style={{
                     width: '4rem',
                     height: '4rem',
-                    backgroundColor: '#fed7aa',
+                    background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
                     borderRadius: '9999px',
                     display: 'flex',
                     alignItems: 'center',
@@ -177,7 +177,7 @@ export default function KusumPage() {
                     <Sun style={{
                       height: '2rem',
                       width: '2rem',
-                      color: theme === 'dark' ? '#fdba74' : '#b91c1c'
+                      color: 'white'
                     }} />
                   </div>
                   <h3 style={{
@@ -200,7 +200,7 @@ export default function KusumPage() {
                   <div style={{
                     width: '4rem',
                     height: '4rem',
-                    backgroundColor: '#fed7aa',
+                    background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
                     borderRadius: '9999px',
                     display: 'flex',
                     alignItems: 'center',
@@ -210,7 +210,7 @@ export default function KusumPage() {
                     <Droplets style={{
                       height: '2rem',
                       width: '2rem',
-                      color: theme === 'dark' ? '#93c5fd' : '#2563eb'
+                      color: 'white'
                     }} />
                   </div>
                   <h3 style={{
@@ -233,7 +233,7 @@ export default function KusumPage() {
                   <div style={{
                     width: '4rem',
                     height: '4rem',
-                    backgroundColor: '#fed7aa',
+                    background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
                     borderRadius: '9999px',
                     display: 'flex',
                     alignItems: 'center',
@@ -243,7 +243,7 @@ export default function KusumPage() {
                     <IndianRupee style={{
                       height: '2rem',
                       width: '2rem',
-                      color: theme === 'dark' ? '#86efac' : '#16a34a'
+                      color: 'white'
                     }} />
                   </div>
                   <h3 style={{
@@ -265,13 +265,14 @@ export default function KusumPage() {
                 borderRadius: '0.5rem',
                 borderLeft: '4px solid #dc2626',
                 margin: '2rem 0',
-                backgroundColor: theme === 'dark' ? '#374151' : '#fed7aa'
+                 background: 'linear-gradient(135deg, rgb(254, 202, 202), rgb(249, 115, 115))',
               }}>
                 <h3 style={{
                   fontSize: '1.25rem',
                   fontWeight: '600',
                   marginBottom: '0.75rem',
-                  color: theme === 'dark' ? '#ffffff' : '#111827'
+                  background: 'linear-gradient(135deg, rgb(254, 202, 202), rgb(249, 115, 115))',
+                  // color: theme === 'dark' ? '#ffffff' : '#111827'
                 }}>Key Objectives:</h3>
                 <ul style={{ listStyleType: 'disc', paddingLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                   <li style={{ color: theme === 'dark' ? '#d1d5db' : '#000000' }}>Ensure energy security for farmers</li>
@@ -306,8 +307,8 @@ export default function KusumPage() {
                 marginBottom: '1rem',
                 color: theme === 'dark' ? '#ffffff' : '#111827'
               }}>Components of PM-KUSUM</h2>
-              <div style={{ width: '5rem', height: '0.25rem', backgroundColor: '#f43f5e', margin: '0 auto' }}></div>
             </div>
+              <div style={{ width: '5rem', height: '0.25rem', backgroundColor: '#f43f5e', margin: '0 auto' }}></div>
             
             <div style={{
               display: 'grid',
@@ -330,14 +331,14 @@ export default function KusumPage() {
                 <div style={{
                   width: '4rem',
                   height: '4rem',
-                  backgroundColor: '#fed7aa',
+                  background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
                   borderRadius: '9999px',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
                   margin: '0 auto 1.5rem'
                 }}>
-                  <span style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#b91c1c' }}>A</span>
+                  <span style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'white' }}>A</span>
                 </div>
                 <h3 style={{
                   fontSize: '1.25rem',
@@ -367,14 +368,14 @@ export default function KusumPage() {
                 <div style={{
                   width: '4rem',
                   height: '4rem',
-                  backgroundColor: '#fed7aa',
+                  background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
                   borderRadius: '9999px',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
                   margin: '0 auto 1.5rem'
                 }}>
-                  <span style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#b91c1c' }}>B</span>
+                  <span style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'white' }}>B</span>
                 </div>
                 <h3 style={{
                   fontSize: '1.25rem',
@@ -404,14 +405,14 @@ export default function KusumPage() {
                 <div style={{
                   width: '4rem',
                   height: '4rem',
-                  backgroundColor: '#fed7aa',
+                  background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
                   borderRadius: '9999px',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
                   margin: '0 auto 1.5rem'
                 }}>
-                  <span style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#b91c1c' }}>C</span>
+                  <span style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'white' }}>C</span>
                 </div>
                 <h3 style={{
                   fontSize: '1.25rem',
@@ -611,8 +612,8 @@ export default function KusumPage() {
                   <p style={{ color: '#374151' }}>
                     The PM-KUSUM scheme is open to a wide range of beneficiaries to ensure maximum participation and benefit from solar power generation and agricultural development.
                   </p>
-                  
-                  <div style={{ backgroundColor: '#fed7aa', padding: '1.5rem', borderRadius: '0.5rem', borderLeft: '4px solid #dc2626' }}>
+
+                  <div style={{ background: 'linear-gradient(135deg, rgb(254, 202, 202), rgb(249, 115, 115))', padding: '1.5rem', borderRadius: '0.5rem', borderLeft: '4px solid #dc2626' }}>
                     <h3 style={{ fontSize: '1.25rem', fontWeight: '600', color: '#111827', marginBottom: '0.75rem' }}>Who Can Apply?</h3>
                     <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                       <li style={{ display: 'flex', alignItems: 'flex-start' }}>
