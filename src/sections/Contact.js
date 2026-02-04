@@ -246,7 +246,7 @@ function Contact() {
                     href="mailto: info@arreion.com"
                     style={{ color: 'inherit', textDecoration: 'none' }}
                   >
-                     info@arreion.com
+                     contact@arreion.com
                   </a>
                 </p>  
               </div>

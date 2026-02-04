@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Sun, Droplets, IndianRupee } from "lucide-react";
 import pmkusumImage from "../assets/images/pmkusumimages.jpg";
 import SolarPanel1 from "../assets/images/SolarPanel1.jpg";
+import kusumLogo from "../assets/images/PMKusumLogo.jpeg";
 
 export default function KusumPage() {
     const theme = 'light'
@@ -76,14 +77,14 @@ export default function KusumPage() {
                   lineHeight: '1.25',
                   color: '#111827'
                 }}>
-                  Empowering Farmers, Powering India – Harness the Sun with <span style={{ color: '#b91c1c' }}>PM-KUSUM Yojana</span>!
+                  {/* Empowering Farmers, Powering India – Harness the Sun with <span style={{ color: '#b91c1c' }}>PM-KUSUM Yojana</span>! */}
                 </p>
                 <p style={{
                   fontSize: '1.125rem',
                   marginBottom: '2rem',
                   color: '#ffffff'
                 }}>
-                  India's largest and most trusted brand for the Kusum projects.
+                  {/* India's largest and most trusted brand for the Kusum projects. */}
                 </p>
                 <div style={{
                   transition: 'background-color 0.2s, color 0.2s',
@@ -127,15 +128,24 @@ export default function KusumPage() {
             margin: '0 auto',
             padding: '0 1rem'
           }}>
-            <div style={{ textAlign: 'center', marginBottom: isMobile ? '2rem' : '3rem' }}>
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: isMobile ? '2rem' : '3rem', flexDirection: isMobile ? 'column' : 'row', gap: '1rem' }}>
+              <img 
+                src={kusumLogo}
+                alt="PM-KUSUM Logo"
+                style={{
+                  height: isMobile ? '100px' : '150px',
+                  width: 'auto',
+                  objectFit: 'contain'
+                }}
+              />
               <h2 style={{
                 fontSize: isMobile ? '1.5rem' : '1.875rem',
                 fontWeight: 'bold',
-                marginBottom: '1rem',
-                color: theme === 'dark' ? '#ffffff' : '#111827'
+                color: theme === 'dark' ? '#ffffff' : '#111827',
+                margin: 0
               }}>About PM-KUSUM</h2>
-              <div style={{ width: '5rem', height: '0.25rem', backgroundColor: '#f43f5e', margin: '0 auto' }}></div>
             </div>
+            <div style={{ width: '50rem', height: '0.25rem', backgroundColor: '#f43f5e', margin: '0 auto 2rem' }}></div>
             
             <div style={{
               fontSize: '1.125rem',

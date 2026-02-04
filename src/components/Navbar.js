@@ -129,7 +129,7 @@ function Navbar() {
           transition: 'transform 0.3s ease'
         }}>
           
-          <div style={{ display: 'flex', flexDirection: 'column',alignItems: 'center' }}>
+          <div style={{  flexDirection: 'column',alignItems: 'center' }}>
             <div style={{ position: 'relative', display: 'inline-block' }}>
               <img 
                 src={logo} 
@@ -154,7 +154,7 @@ function Navbar() {
                 display: 'inline-block',
                 transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
               }}>
-                Renew, Energize, Distribute
+                {/* Renew, Energize, Distribute */}
               </span>
             </div>
           </div>

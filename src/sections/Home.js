@@ -509,9 +509,8 @@ function Home() {
               <span>Utility Scale</span>
             </div>
             <h1 style={{ margin: 0, lineHeight: 1.08, fontSize: 'clamp(30px, 5.2vw, 52px)' }}>
-              Switch to Smarter Solar
+              Renew, Energize, Distribute
               <br />
-              Save More. Live Greener.
             </h1>
             <p style={{ margin: '12px 0 18px', opacity: 0.95, fontSize: 'clamp(14px, 2.4vw, 18px)' }}>
               Cut your electricity bills by up to 70% with high‑efficiency panels, expert design and
@@ -583,7 +582,7 @@ function Home() {
           <div style={{ position:'absolute', bottom:-100, left:-70, width:280, height:280, borderRadius:'50%', background:'radial-gradient(closest-side, rgba(34,197,94,0.08), rgba(34,197,94,0))' }} />
           <div style={{ ...containerStyle, position:'relative' }}>
             <div style={{ display:'inline-flex', gap:8, padding:'6px 10px', background: 'linear-gradient(90deg,#ff6b6b,#e53935)', color:'rgb(255, 255, 255)', borderRadius:999, fontSize:12, marginBottom:10 }}>
-              <span>Who we are</span>
+              {/* <span>Who we are</span> */}
             </div>
             <h2 style={{ margin: 0, fontSize: 'clamp(28px, 4.8vw, 46px)' }}>About Our Solar Mission</h2>
             <p style={{ margin: '12px 0 20px', color: 'var(--solar-muted)', maxWidth: 900, fontSize: 'clamp(14px, 2.2vw, 18px)' }}>
@@ -592,7 +591,7 @@ function Home() {
               savings and long‑term value for homes, industries and institutions.
             </p>
             <div style={{ display:'flex', gap:14, flexWrap:'wrap', margin: '10px 0 16px' }}>
-              <span style={{ padding:'10px 14px', borderRadius:999, background: 'linear-gradient(90deg,#ff6b6b,#e53935)', color:'rgb(255, 255, 255)', fontSize:13 }}>✅ MNRE Compliant</span>
+              {/* <span style={{ padding:'10px 14px', borderRadius:999, background: 'linear-gradient(90deg,#ff6b6b,#e53935)', color:'rgb(255, 255, 255)', fontSize:13 }}>✅ MNRE Compliant</span> */}
               <span style={{ padding:'10px 14px', borderRadius:999,  background: 'linear-gradient(90deg,#ff6b6b,#e53935)', color:'rgb(255, 255, 255)', fontSize:13 }}>🔌 EPCM</span>
               <span style={{ padding:'10px 14px', borderRadius:999,  background: 'linear-gradient(90deg,#ff6b6b,#e53935)', color:'rgb(255, 255, 255)', fontSize:13 }}>🛡️ 25+ Yr Warranty</span>
               <span style={{ padding:'10px 14px', borderRadius:999,  background: 'linear-gradient(90deg,#ff6b6b,#e53935)', color:'rgb(255, 255, 255)', fontSize:13 }}>🗺️ Pan‑India Execution</span>
