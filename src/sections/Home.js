@@ -356,8 +356,8 @@ function Home() {
     const iv = setInterval(() => {
       t += 1;
       setCounts({
-        mwp: Math.min(200, +(t * 10).toFixed(1)),
-        sites: Math.min(200, t * 10),
+        mwp: Math.min(200, +(t * 5).toFixed(1)),
+        sites: Math.min(100, t * 5),
         co2: Math.min(400000000, t * 18000000),
         units: Math.min(350400000, t * 16000000),
       });
@@ -513,8 +513,7 @@ function Home() {
               <br />
             </h1>
             <p style={{ margin: '12px 0 18px', opacity: 0.95, fontSize: 'clamp(14px, 2.4vw, 18px)' }}>
-              Cut your electricity bills by up to 70% with high‑efficiency panels, expert design and
-              end‑to‑end support—from survey to installation and maintenance.
+              Expert design and end‑to‑end support—from survey to installation and maintenance.
             </p>
             <div style={{ 
               display: 'flex', 

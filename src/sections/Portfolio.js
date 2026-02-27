@@ -109,7 +109,7 @@ export default function Portfolio() {
           boxShadow: '0 8px 30px rgba(0, 0, 0, 0.08)'
         }}>
           <img 
-            src={require('../assets/images/map_update.png')} 
+            src={require('../assets/images/CompanyOperations.jpeg')} 
             alt="India Map showing project locations" 
             style={{
               width: '100%',
@@ -180,7 +180,7 @@ export default function Portfolio() {
             overflow: 'hidden',
           }}
         >
-          <div
+          {/* <div
             style={{
               display: 'flex',
               justifyContent: 'space-between',
@@ -211,9 +211,9 @@ export default function Portfolio() {
             >
               Selected Projects
             </span>
-          </div>
+          </div> */}
 
-          <div style={{ overflowX: 'auto' }}>
+          {/* <div style={{ overflowX: 'auto' }}>
             <table
               style={{
                 width: '100%',
@@ -493,7 +493,7 @@ export default function Portfolio() {
                 ))}
               </tbody>
             </table>
-          </div>
+          </div> */}
         </div>
 
         {/* Project Philosophy section */}
@@ -640,31 +640,31 @@ export default function Portfolio() {
               {
                 state: 'Rajasthan',
                 projects: [
-                  { capacity: '5 MW', location: 'Jodhpur' },
-                  { capacity: '4 MW', location: 'Bikaner' },
-                  { capacity: '2.4 MW', location: 'Sujasasar' },
-                  { capacity: '3 MW', location: 'Barmer' },
-                  { capacity: '1 MW', location: 'Jhanjhunu' },
-                  { capacity: '1 MW', location: 'Nagaur' },
-                  { capacity: '3 MW', location: 'Bhoopsera' },
-                  { capacity: '2 MW', location: 'Nagaur' },
+                  { capacity: '5 MW' },
+                  // { capacity: '4 MW' },
+                  // { capacity: '2.4 MW' },
+                  // { capacity: '3 MW' },
+                  // { capacity: '1 MW' },
+                  // { capacity: '1 MW' },
+                  // { capacity: '3 MW' },
+                  // { capacity: '2 MW' },
                 ],
               },
               {
                 state: 'Madhya Pradesh',
                 projects: [
-                  { capacity: '2 MW', location: 'Sandila' },
-                  { capacity: '1 MW', location: 'Chhindwara' },
-                  { capacity: '2 MW', location: 'Niwari' },
-                  { capacity: '2 MW', location: 'Rewa' },
-                  { capacity: '1 MW', location: 'Nagar' },
-                  { capacity: '1 MW', location: 'Gadarwara' },
-                  { capacity: '1.2 MW', location: 'Panari' },
+                  { capacity: '2 MW' },
+                  // { capacity: '1 MW' },
+                  // { capacity: '2 MW' },
+                  // { capacity: '2 MW' },
+                  // { capacity: '1 MW' },
+                  // { capacity: '1 MW' },
+                  // { capacity: '1.2 MW' },
                 ],
               },
               {
                 state: 'Maharashtra',
-                projects: [{ capacity: '2 MW', location: 'Pune' }],
+                projects: [{ capacity: '2 MW' }],
               },
             ].map((block, index) => (
               <div
@@ -726,7 +726,7 @@ export default function Portfolio() {
                   <div
                     style={{
                       display: 'flex',
-                      justifyContent: 'space-between',
+                      justifyContent: 'center',
                       padding: '8px 14px',
                        background: 'linear-gradient(90deg,#ff6b6b,#e53935)',
                       color: '#ffffff',
@@ -737,7 +737,6 @@ export default function Portfolio() {
                     }}
                   >
                     <span>Capacity</span>
-                    <span>Location</span>
                   </div>
                   <div>
                     {block.projects.map((p, rowIndex) => (
@@ -745,7 +744,7 @@ export default function Portfolio() {
                         key={`${block.state}-${rowIndex}`}
                         style={{
                           display: 'flex',
-                          justifyContent: 'space-between',
+                          justifyContent: 'center',
                           padding: '6px 14px',
                           fontSize: '13px',
                           color: '#555555',
@@ -754,7 +753,6 @@ export default function Portfolio() {
                         }}
                       >
                         <span style={{ fontWeight: 600 }}>{p.capacity}</span>
-                        <span>{p.location}</span>
                       </div>
                     ))}
                   </div>
