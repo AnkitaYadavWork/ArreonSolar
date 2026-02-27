@@ -640,7 +640,7 @@ export default function Portfolio() {
               {
                 state: 'Rajasthan',
                 projects: [
-                  { capacity: '5 MW' },
+                  { capacity: '22 MW' },
                   // { capacity: '4 MW' },
                   // { capacity: '2.4 MW' },
                   // { capacity: '3 MW' },
@@ -653,7 +653,7 @@ export default function Portfolio() {
               {
                 state: 'Madhya Pradesh',
                 projects: [
-                  { capacity: '2 MW' },
+                  { capacity: '11 MW' },
                   // { capacity: '1 MW' },
                   // { capacity: '2 MW' },
                   // { capacity: '2 MW' },
